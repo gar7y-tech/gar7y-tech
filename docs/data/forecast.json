@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-27T13:17:19.289Z",
+  "generatedAt": "2026-09-27T14:17:06.373Z",
   "method": "bounded moving-window anomaly and latency trend analysis",
   "note": "Advisory only. Not a guarantee of future outage.",
   "systems": {
@@ -27,7 +27,7 @@
     "api": {
       "state": "degrading",
       "confidence": 95,
-      "note": "Recent latency is 414% above the prior window."
+      "note": "Recent latency is 421% above the prior window."
     },
     "identity": {
       "state": "stable",
