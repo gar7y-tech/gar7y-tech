@@ -1,17 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T12:22:35.391Z",
+  "generatedAt": "2026-09-27T13:17:19.289Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
-    {
-      "systemId": "corporate",
-      "severity": "elevated",
-      "evidence": [
-        "Recent latency is 64% above the prior window."
-      ],
-      "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
-      "runbook": "runtime-warning"
-    },
     {
       "systemId": "store",
       "severity": "elevated",
@@ -28,9 +19,9 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=85.484%",
+        "availability=84.8%",
         "objective=99.9%",
-        "burn_rate=750",
+        "burn_rate=791.67",
         "p95=634ms"
       ],
       "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
@@ -40,16 +31,7 @@
       "systemId": "api",
       "severity": "elevated",
       "evidence": [
-        "Recent latency is 447% above the prior window."
-      ],
-      "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
-      "runbook": "runtime-warning"
-    },
-    {
-      "systemId": "identity",
-      "severity": "elevated",
-      "evidence": [
-        "Recent latency is 51% above the prior window."
+        "Recent latency is 414% above the prior window."
       ],
       "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
       "runbook": "runtime-warning"
