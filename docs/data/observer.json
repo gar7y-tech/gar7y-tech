@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-27T00:26:35.027Z",
+  "generatedAt": "2026-09-27T01:16:59.181Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,25 +15,25 @@
     "corporate": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 375,
-      "samples": 112,
+      "latencyMs": 192,
+      "samples": 113,
       "availabilityPct": 100,
       "latencyP50Ms": 241,
       "latencyP95Ms": 740,
       "latencyP99Ms": 1225,
       "trend": {
         "state": "improving",
-        "confidence": 43,
+        "confidence": 42,
         "note": "Recent latency improved versus the prior window."
       }
     },
     "hana": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 252,
-      "samples": 112,
+      "latencyMs": 156,
+      "samples": 113,
       "availabilityPct": 100,
-      "latencyP50Ms": 139,
+      "latencyP50Ms": 140,
       "latencyP95Ms": 293,
       "latencyP99Ms": 459,
       "trend": {
@@ -45,10 +45,10 @@
     "store": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 2637,
-      "samples": 112,
+      "latencyMs": 1760,
+      "samples": 113,
       "availabilityPct": 100,
-      "latencyP50Ms": 1469,
+      "latencyP50Ms": 1504,
       "latencyP95Ms": 2145,
       "latencyP99Ms": 3019,
       "trend": {
@@ -60,49 +60,49 @@
     "bybit": {
       "reachable": false,
       "status": 0,
-      "latencyMs": 171,
-      "samples": 112,
-      "availabilityPct": 94.643,
+      "latencyMs": 98,
+      "samples": 113,
+      "availabilityPct": 93.805,
       "latencyP50Ms": 344,
       "latencyP95Ms": 634,
       "latencyP99Ms": 715,
       "trend": {
         "state": "improving",
-        "confidence": 53,
+        "confidence": 39,
         "note": "Recent latency improved versus the prior window."
       }
     },
     "api": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 1100,
-      "samples": 112,
+      "latencyMs": 343,
+      "samples": 113,
       "availabilityPct": 100,
-      "latencyP50Ms": 341,
+      "latencyP50Ms": 343,
       "latencyP95Ms": 648,
       "latencyP99Ms": 702,
       "trend": {
         "state": "degrading",
-        "confidence": 92,
-        "note": "Recent latency is 92% above the prior window."
+        "confidence": 56,
+        "note": "Recent latency is 56% above the prior window."
       }
     },
     "identity": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 1115,
-      "samples": 112,
+      "latencyMs": 447,
+      "samples": 113,
       "availabilityPct": 100,
-      "latencyP50Ms": 392,
+      "latencyP50Ms": 405,
       "latencyP95Ms": 729,
       "latencyP99Ms": 816,
       "trend": {
         "state": "degrading",
-        "confidence": 59,
-        "note": "Recent latency is 59% above the prior window."
+        "confidence": 56,
+        "note": "Recent latency is 56% above the prior window."
       }
     }
   },
   "openIncidents": 1,
-  "historyWindowSamples": 112
+  "historyWindowSamples": 113
 }
