@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T01:16:59.181Z",
+  "generatedAt": "2026-09-27T02:18:20.648Z",
   "basis": "synthetic-public-reachability",
   "systems": {
     "corporate": {
@@ -11,7 +11,7 @@
       "latencyP95Ms": 740,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 113
+      "sampleBasis": 114
     },
     "hana": {
       "objectivePct": 99.9,
@@ -21,7 +21,7 @@
       "latencyP95Ms": 293,
       "latencyP95TargetMs": 1500,
       "state": "within-objective",
-      "sampleBasis": 113
+      "sampleBasis": 114
     },
     "store": {
       "objectivePct": 99.9,
@@ -31,27 +31,27 @@
       "latencyP95Ms": 2145,
       "latencyP95TargetMs": 1500,
       "state": "at-risk",
-      "sampleBasis": 113
+      "sampleBasis": 114
     },
     "bybit": {
       "objectivePct": 99.9,
-      "observedAvailabilityPct": 93.805,
+      "observedAvailabilityPct": 92.982,
       "errorBudgetRemainingPct": 0,
-      "burnRate": 291.67,
+      "burnRate": 333.33,
       "latencyP95Ms": 634,
       "latencyP95TargetMs": 1500,
       "state": "at-risk",
-      "sampleBasis": 113
+      "sampleBasis": 114
     },
     "api": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 648,
+      "latencyP95Ms": 656,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 113
+      "sampleBasis": 114
     },
     "identity": {
       "objectivePct": 99.9,
@@ -61,7 +61,7 @@
       "latencyP95Ms": 729,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 113
+      "sampleBasis": 114
     }
   }
 }
