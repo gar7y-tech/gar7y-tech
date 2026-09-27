@@ -1,8 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T10:17:44.312Z",
+  "generatedAt": "2026-09-27T11:17:27.535Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
+    {
+      "systemId": "corporate",
+      "severity": "elevated",
+      "evidence": [
+        "Recent latency is 121% above the prior window."
+      ],
+      "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
+      "runbook": "runtime-warning"
+    },
     {
       "systemId": "store",
       "severity": "elevated",
@@ -19,9 +28,9 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=86.885%",
+        "availability=86.179%",
         "objective=99.9%",
-        "burn_rate=666.67",
+        "burn_rate=708.33",
         "p95=634ms"
       ],
       "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
