@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-27T21:17:17.095Z",
+  "generatedAt": "2026-09-27T22:17:33.692Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,8 +15,8 @@
     "corporate": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 452,
-      "samples": 133,
+      "latencyMs": 323,
+      "samples": 134,
       "availabilityPct": 100,
       "latencyP50Ms": 242,
       "latencyP95Ms": 740,
@@ -31,22 +31,22 @@
       "reachable": true,
       "status": 200,
       "latencyMs": 134,
-      "samples": 133,
+      "samples": 134,
       "availabilityPct": 100,
-      "latencyP50Ms": 139,
+      "latencyP50Ms": 138,
       "latencyP95Ms": 338,
       "latencyP99Ms": 461,
       "trend": {
-        "state": "improving",
-        "confidence": 36,
-        "note": "Recent latency improved versus the prior window."
+        "state": "stable",
+        "confidence": 70,
+        "note": "No material latency trend detected."
       }
     },
     "store": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 1217,
-      "samples": 133,
+      "latencyMs": 1640,
+      "samples": 134,
       "availabilityPct": 100,
       "latencyP50Ms": 1444,
       "latencyP95Ms": 2126,
@@ -60,9 +60,9 @@
     "bybit": {
       "reachable": false,
       "status": 0,
-      "latencyMs": 108,
-      "samples": 133,
-      "availabilityPct": 79.699,
+      "latencyMs": 47,
+      "samples": 134,
+      "availabilityPct": 79.104,
       "latencyP50Ms": 344,
       "latencyP95Ms": 634,
       "latencyP99Ms": 715,
@@ -75,10 +75,10 @@
     "api": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 424,
-      "samples": 133,
+      "latencyMs": 306,
+      "samples": 134,
       "availabilityPct": 100,
-      "latencyP50Ms": 343,
+      "latencyP50Ms": 341,
       "latencyP95Ms": 656,
       "latencyP99Ms": 1100,
       "trend": {
@@ -90,8 +90,8 @@
     "identity": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 297,
-      "samples": 133,
+      "latencyMs": 359,
+      "samples": 134,
       "availabilityPct": 100,
       "latencyP50Ms": 391,
       "latencyP95Ms": 720,
@@ -104,5 +104,5 @@
     }
   },
   "openIncidents": 1,
-  "historyWindowSamples": 133
+  "historyWindowSamples": 134
 }
