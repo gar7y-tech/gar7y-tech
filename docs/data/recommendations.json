@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T11:17:27.535Z",
+  "generatedAt": "2026-09-27T12:22:35.391Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
     {
       "systemId": "corporate",
       "severity": "elevated",
       "evidence": [
-        "Recent latency is 121% above the prior window."
+        "Recent latency is 64% above the prior window."
       ],
       "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
       "runbook": "runtime-warning"
@@ -28,13 +28,31 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=86.179%",
+        "availability=85.484%",
         "objective=99.9%",
-        "burn_rate=708.33",
+        "burn_rate=750",
         "p95=634ms"
       ],
       "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
       "runbook": "public-edge-unreachable"
+    },
+    {
+      "systemId": "api",
+      "severity": "elevated",
+      "evidence": [
+        "Recent latency is 447% above the prior window."
+      ],
+      "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
+      "runbook": "runtime-warning"
+    },
+    {
+      "systemId": "identity",
+      "severity": "elevated",
+      "evidence": [
+        "Recent latency is 51% above the prior window."
+      ],
+      "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
+      "runbook": "runtime-warning"
     }
   ]
 }
