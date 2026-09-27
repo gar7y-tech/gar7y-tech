@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T06:23:20.786Z",
+  "generatedAt": "2026-09-27T07:17:59.649Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
     {
@@ -19,9 +19,9 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=89.831%",
+        "availability=89.076%",
         "objective=99.9%",
-        "burn_rate=500",
+        "burn_rate=541.67",
         "p95=634ms"
       ],
       "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
