@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-28T01:18:21.213Z",
+  "generatedAt": "2026-09-28T02:18:51.426Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,8 +15,8 @@
     "corporate": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 327,
-      "samples": 137,
+      "latencyMs": 398,
+      "samples": 138,
       "availabilityPct": 100,
       "latencyP50Ms": 248,
       "latencyP95Ms": 740,
@@ -30,8 +30,8 @@
     "hana": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 172,
-      "samples": 137,
+      "latencyMs": 193,
+      "samples": 138,
       "availabilityPct": 100,
       "latencyP50Ms": 139,
       "latencyP95Ms": 338,
@@ -45,10 +45,10 @@
     "store": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 1626,
-      "samples": 137,
+      "latencyMs": 859,
+      "samples": 138,
       "availabilityPct": 100,
-      "latencyP50Ms": 1444,
+      "latencyP50Ms": 1430,
       "latencyP95Ms": 2126,
       "latencyP99Ms": 3019,
       "trend": {
@@ -60,9 +60,9 @@
     "bybit": {
       "reachable": false,
       "status": 0,
-      "latencyMs": 81,
-      "samples": 137,
-      "availabilityPct": 77.372,
+      "latencyMs": 130,
+      "samples": 138,
+      "availabilityPct": 76.812,
       "latencyP50Ms": 344,
       "latencyP95Ms": 634,
       "latencyP99Ms": 715,
@@ -75,8 +75,8 @@
     "api": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 526,
-      "samples": 137,
+      "latencyMs": 533,
+      "samples": 138,
       "availabilityPct": 100,
       "latencyP50Ms": 343,
       "latencyP95Ms": 656,
@@ -90,8 +90,8 @@
     "identity": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 614,
-      "samples": 137,
+      "latencyMs": 338,
+      "samples": 138,
       "availabilityPct": 100,
       "latencyP50Ms": 391,
       "latencyP95Ms": 720,
@@ -104,5 +104,5 @@
     }
   },
   "openIncidents": 1,
-  "historyWindowSamples": 137
+  "historyWindowSamples": 138
 }
