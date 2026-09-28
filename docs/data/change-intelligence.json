@@ -1,31 +1,29 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-27T23:16:52.946Z",
+  "generatedAt": "2026-09-28T00:27:51.286Z",
   "repository": "gar7y-tech/garhy-gpt-oss-cloud",
   "status": "ready",
   "latestChange": {
-    "sha": "3b81bd87e588",
-    "message": "Merge pull request #28 from gar7y-tech/chore/gt-crypto-retire-old-domain",
-    "authoredAt": "2026-09-26T19:11:08Z",
+    "sha": "0b19511d0099",
+    "message": "Merge pull request #30 from gar7y-tech/fix/gt-crypto-p2p-response-format",
+    "authoredAt": "2026-09-27T23:49:49Z",
     "verified": true,
-    "additions": 6,
+    "additions": 27,
     "deletions": 6,
-    "riskScore": 20,
+    "riskScore": 22,
     "riskLevel": "low",
     "blastRadius": "review-required",
     "sensitivePaths": [
-      "gt-bybit-app/lib/bybit-control.js",
-      "gt-bybit-app/test/helpers.mjs",
-      "gt-bybit-app/test/security.test.js",
-      "gt-bybit-app/test/service-worker.test.js"
+      "gt-bybit-app/lib/bybit.js",
+      "gt-bybit-app/test/security.test.js"
     ],
     "factors": {
-      "filesChanged": 4,
-      "churn": 12,
-      "sensitivePaths": 4,
+      "filesChanged": 2,
+      "churn": 33,
+      "sensitivePaths": 2,
       "migrations": 0,
       "workflows": 0,
-      "tests": 3
+      "tests": 1
     }
   }
 }
