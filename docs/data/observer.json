@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-28T15:21:49.005Z",
+  "generatedAt": "2026-09-28T16:22:38.891Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,8 +15,8 @@
     "corporate": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 441,
-      "samples": 151,
+      "latencyMs": 327,
+      "samples": 152,
       "availabilityPct": 100,
       "latencyP50Ms": 249,
       "latencyP95Ms": 709,
@@ -30,8 +30,8 @@
     "hana": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 342,
-      "samples": 151,
+      "latencyMs": 275,
+      "samples": 152,
       "availabilityPct": 100,
       "latencyP50Ms": 138,
       "latencyP95Ms": 338,
@@ -45,8 +45,8 @@
     "store": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 1785,
-      "samples": 151,
+      "latencyMs": 1377,
+      "samples": 152,
       "availabilityPct": 100,
       "latencyP50Ms": 1430,
       "latencyP95Ms": 2091,
@@ -60,9 +60,9 @@
     "bybit": {
       "reachable": false,
       "status": 0,
-      "latencyMs": 128,
-      "samples": 151,
-      "availabilityPct": 70.199,
+      "latencyMs": 54,
+      "samples": 152,
+      "availabilityPct": 69.737,
       "latencyP50Ms": 344,
       "latencyP95Ms": 634,
       "latencyP99Ms": 715,
@@ -75,8 +75,8 @@
     "api": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 420,
-      "samples": 151,
+      "latencyMs": 468,
+      "samples": 152,
       "availabilityPct": 100,
       "latencyP50Ms": 340,
       "latencyP95Ms": 648,
@@ -90,19 +90,19 @@
     "identity": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 420,
-      "samples": 151,
+      "latencyMs": 449,
+      "samples": 152,
       "availabilityPct": 100,
       "latencyP50Ms": 391,
       "latencyP95Ms": 720,
       "latencyP99Ms": 947,
       "trend": {
         "state": "improving",
-        "confidence": 35,
+        "confidence": 34,
         "note": "Recent latency improved versus the prior window."
       }
     }
   },
   "openIncidents": 1,
-  "historyWindowSamples": 151
+  "historyWindowSamples": 152
 }

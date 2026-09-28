@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T15:21:49.005Z",
+  "generatedAt": "2026-09-28T16:22:38.891Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
     {
@@ -19,7 +19,7 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=70.199%",
+        "availability=69.737%",
         "objective=99.9%",
         "burn_rate=1000",
         "p95=634ms"
