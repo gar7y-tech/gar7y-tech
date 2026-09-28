@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T03:20:27.590Z",
+  "generatedAt": "2026-09-28T04:20:42.375Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
     {
@@ -10,7 +10,7 @@
         "availability=100%",
         "objective=99.9%",
         "burn_rate=0",
-        "p95=2126ms"
+        "p95=2091ms"
       ],
       "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
       "runbook": "public-edge-unreachable"
@@ -19,7 +19,7 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=76.259%",
+        "availability=75.714%",
         "objective=99.9%",
         "burn_rate=1000",
         "p95=634ms"
