@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-29T22:19:01.216Z",
+  "updatedAt": "2026-09-29T23:17:22.062Z",
   "incidents": [
     {
       "id": "bybit-1790450143456",
@@ -10,6 +10,16 @@
       "severity": "public-edge-degraded",
       "openedAt": "2026-09-26T19:15:41.502Z",
       "summary": "GT.BYBIT public reachability changed from reachable to unavailable.",
+      "source": "public-observer"
+    },
+    {
+      "id": "store-1790723850326",
+      "systemId": "store",
+      "systemName": "GARHY Store",
+      "status": "open",
+      "severity": "public-edge-degraded",
+      "openedAt": "2026-09-29T23:17:22.062Z",
+      "summary": "GARHY Store public reachability changed from reachable to unavailable.",
       "source": "public-observer"
     }
   ]

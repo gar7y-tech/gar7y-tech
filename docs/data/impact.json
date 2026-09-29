@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T22:19:01.216Z",
+  "generatedAt": "2026-09-29T23:17:22.062Z",
   "topologyNodes": 11,
   "topologyEdges": 10,
   "systems": {
@@ -17,7 +17,7 @@
     "store": {
       "affectedNodes": [],
       "blastRadius": 0,
-      "state": "nominal"
+      "state": "active-impact"
     },
     "bybit": {
       "affectedNodes": [],
