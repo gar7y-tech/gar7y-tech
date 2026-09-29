@@ -237,7 +237,7 @@ function command(commandName) {
     line(commandName, s ? `${s.name}\n${s.url}\n${s.detail}` : 'Unknown system.');
     return;
   }
-  if (commandName === 'github') { location.href = 'https://github.com/Garhy-tech'; return; }
+  if (commandName === 'github') { location.href = 'https://github.com/gar7y-tech'; return; }
   if (commandName === 'company') { location.href = 'https://garhy.tech'; return; }
   const value = map[commandName];
   line(commandName, typeof value === 'function' ? value() : value || 'Unknown command. Type help.');
