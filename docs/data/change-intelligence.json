@@ -1,25 +1,23 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T12:25:36.800Z",
+  "generatedAt": "2026-09-29T13:23:03.417Z",
   "repository": "gar7y-tech/garhy-gpt-oss-cloud",
   "status": "ready",
   "latestChange": {
-    "sha": "ea455e9cba4b",
-    "message": "feat(hana): add Wird Amira Islamic assistant endpoint (#31)",
-    "authoredAt": "2026-09-29T12:20:19Z",
+    "sha": "b6b8b745900e",
+    "message": "fix(hana): avoid false unsafe match for Fajr prayer (#32)",
+    "authoredAt": "2026-09-29T13:14:28Z",
     "verified": true,
-    "additions": 245,
+    "additions": 7,
     "deletions": 1,
-    "riskScore": 30,
-    "riskLevel": "elevated",
-    "blastRadius": "review-required",
-    "sensitivePaths": [
-      "hana-ai-pro/api/wird-amira.js"
-    ],
+    "riskScore": 2,
+    "riskLevel": "low",
+    "blastRadius": "bounded",
+    "sensitivePaths": [],
     "factors": {
-      "filesChanged": 4,
-      "churn": 246,
-      "sensitivePaths": 1,
+      "filesChanged": 2,
+      "churn": 8,
+      "sensitivePaths": 0,
       "migrations": 0,
       "workflows": 0,
       "tests": 1

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T12:25:36.800Z",
+  "generatedAt": "2026-09-29T13:23:03.417Z",
   "basis": "synthetic-public-reachability",
   "systems": {
     "corporate": {
@@ -28,14 +28,14 @@
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 2126,
+      "latencyP95Ms": 2065,
       "latencyP95TargetMs": 1500,
       "state": "at-risk",
       "sampleBasis": 168
     },
     "bybit": {
       "objectivePct": 99.9,
-      "observedAvailabilityPct": 60.119,
+      "observedAvailabilityPct": 59.524,
       "errorBudgetRemainingPct": 0,
       "burnRate": 1000,
       "latencyP95Ms": 612,
