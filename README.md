@@ -1,168 +1,151 @@
 <div align="center">
 
-<img src="./assets/command-center.svg" alt="GARHY TECH Engineering Command Surface" width="100%" />
+<img src="./assets/command-center.svg" alt="Ahmed El Garhy — GARHY TECH Engineering Profile" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=700&color=00E5FF&center=true&vCenter=true&width=900&lines=GARHY+TECH+%2F%2F+ENGINEERING+OS;SLO+%E2%80%A2+IMPACT+%E2%80%A2+INTELLIGENCE+%E2%80%A2+GOVERNANCE;OBSERVE+%E2%80%A2+UNDERSTAND+%E2%80%A2+CORRELATE+%E2%80%A2+PREDICT" alt="GARHY TECH animated engineering header" />
+# Ahmed El Garhy
 
-# GARHY TECH
+### Founder @ GARHY TECH · AI Automation & Software Developer
 
-**Software Engineering · AI · Automation · Cloud · APIs · Security · DevOps**
+**AI Agents · Workflow Automation · API Integrations · Full-Stack Development · Cloud · DevOps**
 
-`PERFORMANCE` · `SCALABILITY` · `MAINTAINABILITY` · `RELIABILITY`
+I build AI-powered software, intelligent automation systems, production web applications and end-to-end digital solutions.
 
-**Founded & developed by [Ahmed Atef Elgarhy](https://garhy.tech/ahmed-elgarhy) — professionally known as Ahmed Elgarhy — Founder & Developer of GARHY TECH and the GT application ecosystem.**
+[![Website](https://img.shields.io/badge/GARHY_TECH-garhy.tech-111827?style=for-the-badge)](https://garhy.tech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed_El_Garhy-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ahmed-el-garhy-a9b321431)
+[![Email](https://img.shields.io/badge/Email-founder%40garhy.tech-111827?style=for-the-badge)](mailto:founder@garhy.tech)
+[![GitHub](https://img.shields.io/badge/GitHub-gar7y--tech-181717?style=for-the-badge&logo=github)](https://github.com/gar7y-tech)
 
-[Launch Engineering OS](https://garhy-tech.github.io/Garhy-tech/) · [Website](https://garhy.tech) · [GARHY AI / HANA](https://github.com/Garhy-tech/garhy-gpt-oss-cloud) · [GitHub](https://github.com/Garhy-tech)
-
-</div>
-
----
-
-## `FOUNDER // IDENTITY`
-
-**Ahmed Atef Elgarhy** (professionally known as **Ahmed Elgarhy**) is the **Founder & Developer of GARHY TECH** and the **GT application ecosystem**.
-
-Technical focus: `Software Engineering` · `AI` · `Automation` · `Cloud Infrastructure` · `Databases` · `APIs` · `Cybersecurity` · `DevOps`
-
-[Founder profile](https://garhy.tech/ahmed-elgarhy) · [GARHY TECH](https://garhy.tech) · [GitHub](https://github.com/Garhy-tech)
-
----
-
-## `00 // GARHY ENGINEERING OS`
-
-<div align="center">
-
-### [OPEN LIVE ENGINEERING OS](https://garhy-tech.github.io/Garhy-tech/)
-
-A governed public engineering intelligence surface for deployment state, bounded observability, SLO/error-budget signals, digital-twin impact analysis, incident memory, predictive trends, change-risk intelligence and deterministic diagnostics.
+**Egypt · Open to opportunities and relocation across Saudi Arabia, UAE & GCC**
 
 </div>
 
-The public plane is intentionally **read-only**. It exposes bounded engineering signals without publishing credentials, privileged identifiers, private topology or production mutation controls.
-
 ---
 
-## `01 // ENGINEERING INTELLIGENCE MODEL`
+## What I Build
 
-```text
-OBSERVE -> UNDERSTAND -> CORRELATE -> PREDICT -> VERIFY -> LEARN
-```
-
-| Capability | Current public implementation |
+| Focus | What I work on |
 |---|---|
-| Telemetry Fabric | OpenTelemetry-compatible public contract with server-side-only ingestion boundary |
-| SLO / Error Budget | 99.9% public reachability proxy derived from bounded observer history |
+| **AI Automation** | AI-assisted workflows, intelligent process automation, orchestration and business automation |
+| **AI Agents** | Tool-using agents, structured outputs, multi-step execution and human-in-the-loop workflows |
+| **Software Engineering** | Production web applications, architecture, state management, testing and maintainability |
+| **API Integration** | REST APIs, webhooks, third-party services, authentication and system-to-system integrations |
+| **Full-Stack Systems** | Frontend, backend, databases, authentication, deployment and operational workflows |
+| **Cloud & DevOps** | Vercel, Cloudflare, AWS, Docker, GitHub Actions, Linux and deployment automation |
+
+---
+
+## Technical Surface
+
+`TypeScript` · `JavaScript` · `React` · `Next.js` · `Node.js` · `Python` · `Supabase` · `PostgreSQL` · `REST APIs` · `Webhooks` · `GitHub Actions` · `Vercel` · `Cloudflare` · `AWS` · `Docker` · `Linux`
+
+### AI-Assisted Engineering
+
+I use modern AI systems as an engineering layer across requirements analysis, architecture, implementation, debugging, testing, code review, documentation, automation design and deployment — with human verification and technical control over the final result.
+
+---
+
+## Featured Work
+
+### GARHY AI / HANA
+**AI & automation product surface**
+
+[Repository](https://github.com/gar7y-tech/garhy-gpt-oss-cloud) · [Live Application](https://garhy-gpt-oss-cloud.vercel.app)
+
+Public work focused on AI-powered software, automation and integrated digital experiences.
+
+### GT Amira
+**Arabic-first Progressive Web Application**
+
+[Live Application](https://tasbih.garhy.tech/)
+
+A mobile-first Arabic PWA within the GARHY TECH ecosystem, developed around reliable application behavior, content integrity, accessibility, offline/PWA capabilities, media workflows and production deployment quality.
+
+### GARHY Engineering OS
+**Public engineering intelligence surface**
+
+[Open Engineering OS](https://gar7y-tech.github.io/gar7y-tech/)
+
+A bounded public engineering surface for deployment state, observability signals, SLO/error-budget views, impact analysis, incident memory, change intelligence and deterministic diagnostics.
+
+---
+
+## Engineering Approach
+
+```text
+UNDERSTAND -> ARCHITECT -> AUTOMATE -> BUILD -> VERIFY -> DEPLOY -> OBSERVE -> IMPROVE
+```
+
+- Architecture before unnecessary coupling.
+- Automate repeatable work.
+- Keep APIs and interfaces explicit.
+- Treat reliability, maintainability and security as engineering requirements.
+- Verify AI-generated output instead of treating generation as proof.
+- Keep privileged operations bounded, auditable and human-controlled.
+- Measure production behavior and iterate from evidence.
+
+---
+
+## Engineering OS — Public Capability Model
+
+| Capability | Public implementation |
+|---|---|
+| Telemetry Fabric | OpenTelemetry-compatible public contract with server-side ingestion boundary |
+| SLO / Error Budget | Public reachability signals derived from bounded observer history |
 | Digital Twin | Machine-readable public dependency graph |
-| Impact Analysis | Downstream blast-radius analysis from the public topology |
-| Change Intelligence 2.0 | Risk score, sensitive paths, migrations, workflows, tests and bounded blast radius |
-| Predictive Signals | Evidence-based moving-window latency trend analysis |
-| Engineering Copilot | Deterministic answers grounded only in loaded public engineering state |
-| Governed Operations | Public mutation denied; remediation reserved for the private authorized plane |
+| Impact Analysis | Downstream blast-radius analysis from public topology |
+| Change Intelligence | Risk signals for sensitive paths, migrations, workflows and tests |
+| Predictive Signals | Evidence-based moving-window latency trends |
+| Engineering Copilot | Deterministic answers grounded in loaded public engineering state |
+| Governed Operations | Public mutation denied; privileged remediation remains private |
 
 ---
 
-## `02 // GARHY ECOSYSTEM`
+## GARHY TECH Ecosystem
 
-| System | Public signal | Role |
-|---|---|---|
-| **GARHY AI / HANA** | [Public repository](https://github.com/Garhy-tech/garhy-gpt-oss-cloud) | AI and automation |
-| **GARHY TECH** | [garhy.tech](https://garhy.tech) | Corporate surface |
-| **GARHY Store** | [store.garhy.tech](https://store.garhy.tech) | Commerce |
-| **GARHY API** | [api.garhy.tech](https://api.garhy.tech) | Platform API |
-| **GARHY ID** | [id.garhy.tech](https://id.garhy.tech) | Identity |
-| **Engineering OS** | [Live surface](https://garhy-tech.github.io/Garhy-tech/) | Public engineering intelligence |
-
----
-
-## `03 // ACTIVE TECHNOLOGY SURFACE`
-
-`TypeScript` · `JavaScript` · `React` · `Next.js` · `Node.js` · `Python` · `Supabase` · `PostgreSQL` · `AWS` · `Cloudflare` · `Vercel` · `Docker` · `GitHub Actions` · `Linux`
+| System | Role |
+|---|---|
+| [GARHY AI / HANA](https://github.com/gar7y-tech/garhy-gpt-oss-cloud) | AI & automation |
+| [GARHY TECH](https://garhy.tech) | Corporate platform |
+| [GARHY Store](https://store.garhy.tech) | Commerce |
+| [GARHY API](https://api.garhy.tech) | Platform API |
+| [GARHY ID](https://id.garhy.tech) | Identity |
+| [GT Amira](https://tasbih.garhy.tech/) | Arabic-first PWA |
+| [Engineering OS](https://gar7y-tech.github.io/gar7y-tech/) | Public engineering intelligence |
 
 ---
 
-## `04 // LIVE GITHUB SIGNAL`
+## GitHub Activity
 
 <div align="center">
-  <img src="./assets/live-metrics.svg" alt="GARHY TECH live public GitHub metrics" width="100%" />
-</div>
 
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Garhy-tech&show_icons=true&hide_border=true&bg_color=00000000&title_color=00e5ff&text_color=cbd5e1&icon_color=72f4ff&include_all_commits=true&rank_icon=github" alt="GARHY TECH GitHub stats" />
-  <img height="165" src="https://streak-stats.demolab.com?user=Garhy-tech&hide_border=true&background=00000000&ring=00E5FF&fire=72F4FF&currStreakLabel=72F4FF&sideNums=CBD5E1&currStreakNum=FFFFFF&sideLabels=94A3B8&dates=64748B" alt="GARHY TECH GitHub streak" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=gar7y-tech&show_icons=true&hide_border=true&bg_color=00000000&include_all_commits=true&rank_icon=github" alt="Ahmed El Garhy GitHub stats" />
+
+<img height="165" src="https://streak-stats.demolab.com?user=gar7y-tech&hide_border=true&background=00000000" alt="Ahmed El Garhy GitHub streak" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=gar7y-tech&bg_color=00000000&area=true&hide_border=true" alt="Ahmed El Garhy contribution activity graph" width="100%" />
+
 </div>
 
 ---
 
-## `05 // CONTRIBUTION SNAKE`
+## Contact
 
-<div align="center">
-  <img src="./assets/github-contribution-grid-snake.svg" alt="GARHY TECH animated GitHub contribution snake" width="100%" />
-</div>
+**Ahmed El Garhy**  
+Founder @ **GARHY TECH**  
+AI Automation & Software Developer
 
-Generated from this account's real GitHub contribution graph and refreshed automatically by a SHA-pinned GitHub Actions workflow.
-
----
-
-## `06 // CONTRIBUTION ACTIVITY`
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Garhy-tech&bg_color=00000000&color=94a3b8&line=00e5ff&point=72f4ff&area=true&hide_border=true" alt="GARHY TECH contribution activity graph" width="100%" />
-</div>
-
----
-
-## `07 // MACHINE-READABLE ENGINEERING DATA`
-
-The Engineering OS publishes bounded, non-secret JSON surfaces for interoperability and inspection:
-
-`registry` · `telemetry` · `observer` · `slo` · `impact` · `forecast` · `incidents` · `topology` · `policies` · `runbooks` · `telemetry-fabric` · `change-intelligence`
-
-[Open machine-data surface](https://garhy-tech.github.io/Garhy-tech/#data)
-
----
-
-## `08 // QUALITY & GOVERNANCE`
-
-The profile repository includes a zero-dependency integrity gate for required public files, JSON validity, topology references, HTTPS registry URLs, PWA metadata, telemetry-fabric boundaries and SHA-pinned workflow actions.
-
-```text
-PUBLIC PLANE       -> READ ONLY
-SECRETS            -> NEVER PUBLISHED
-PRIVATE TOPOLOGY   -> EXCLUDED
-PRODUCTION CHANGE  -> PRIVATE AUTHORIZED PLANE
-HIGH-IMPACT ACTION -> EXPLICIT HUMAN APPROVAL
-```
-
----
-
-## `09 // SELECTED PUBLIC WORK`
-
-### [GARHY AI / HANA](https://github.com/Garhy-tech/garhy-gpt-oss-cloud)
-Public source repository for GARHY AI / HANA.
-
----
-
-## `10 // OPERATING PRINCIPLES`
-
-```text
-01  Architecture before coupling.
-02  Automate repeatable work.
-03  Measure, change, verify.
-04  Keep interfaces explicit.
-05  Build for reliability and maintainability.
-06  Make operational state observable.
-07  Keep public surfaces bounded and safe.
-08  Predictions require evidence, not guessing.
-09  Autonomous actions must be reversible and auditable.
-10  Scale only with measurable behavior.
-```
+- Email: [founder@garhy.tech](mailto:founder@garhy.tech)
+- LinkedIn: [Ahmed El Garhy](https://www.linkedin.com/in/ahmed-el-garhy-a9b321431)
+- GitHub: [github.com/gar7y-tech](https://github.com/gar7y-tech)
+- Website: [garhy.tech](https://garhy.tech)
+- Founder profile: [garhy.tech/ahmed-elgarhy](https://garhy.tech/ahmed-elgarhy)
 
 ---
 
 <div align="center">
 
-### `GARHY TECH // OBSERVE • UNDERSTAND • CORRELATE • PREDICT • VERIFY • LEARN`
+### Building practical AI systems — not AI demos.
 
-[Engineering OS](https://garhy-tech.github.io/Garhy-tech/) · [garhy.tech](https://garhy.tech) · [GitHub](https://github.com/Garhy-tech)
+**GARHY TECH · AI · Automation · Software Engineering**
 
 </div>

@@ -24,7 +24,7 @@
       "visibility": "public",
       "probe": true,
       "telemetryKey": "hana",
-      "github": "https://github.com/Garhy-tech/garhy-gpt-oss-cloud",
+      "github": "https://github.com/gar7y-tech/garhy-gpt-oss-cloud",
       "detail": "Public AI and automation product surface."
     },
     {
@@ -80,7 +80,7 @@
       "name": "GitHub",
       "role": "Engineering Signal",
       "category": "engineering",
-      "url": "https://github.com/Garhy-tech",
+      "url": "https://github.com/gar7y-tech",
       "provider": "GitHub",
       "visibility": "public",
       "probe": false,

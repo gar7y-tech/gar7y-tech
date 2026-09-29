@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 
 const dataPath=name=>new URL(`../docs/data/${name}`,import.meta.url);
-const owner=process.env.GITHUB_REPOSITORY_OWNER||'Garhy-tech';
+const owner=process.env.GITHUB_REPOSITORY_OWNER||'gar7y-tech';
 const token=process.env.GITHUB_TOKEN||'';
 const now=new Date().toISOString();
 const ghHeaders={Accept:'application/vnd.github+json','User-Agent':'garhy-engineering-os-observer','X-GitHub-Api-Version':'2022-11-28',...(token?{Authorization:`Bearer ${token}`}:{})};
