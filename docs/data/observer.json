@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-29T07:20:46.079Z",
+  "generatedAt": "2026-09-29T08:22:02.744Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,22 +15,22 @@
     "corporate": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 713,
+      "latencyMs": 274,
       "samples": 168,
       "availabilityPct": 100,
-      "latencyP50Ms": 249,
+      "latencyP50Ms": 250,
       "latencyP95Ms": 740,
       "latencyP99Ms": 1225,
       "trend": {
         "state": "degrading",
         "confidence": 95,
-        "note": "Recent latency is 176% above the prior window."
+        "note": "Recent latency is 205% above the prior window."
       }
     },
     "hana": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 175,
+      "latencyMs": 55,
       "samples": 168,
       "availabilityPct": 100,
       "latencyP50Ms": 138,
@@ -45,7 +45,7 @@
     "store": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 1349,
+      "latencyMs": 1851,
       "samples": 168,
       "availabilityPct": 100,
       "latencyP50Ms": 1430,
@@ -60,10 +60,10 @@
     "bybit": {
       "reachable": false,
       "status": 0,
-      "latencyMs": 168,
+      "latencyMs": 35,
       "samples": 168,
-      "availabilityPct": 63.095,
-      "latencyP50Ms": 344,
+      "availabilityPct": 62.5,
+      "latencyP50Ms": 347,
       "latencyP95Ms": 634,
       "latencyP99Ms": 715,
       "trend": {
@@ -75,7 +75,7 @@
     "api": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 512,
+      "latencyMs": 353,
       "samples": 168,
       "availabilityPct": 100,
       "latencyP50Ms": 337,
@@ -90,11 +90,11 @@
     "identity": {
       "reachable": true,
       "status": 404,
-      "latencyMs": 527,
+      "latencyMs": 234,
       "samples": 168,
       "availabilityPct": 100,
       "latencyP50Ms": 391,
-      "latencyP95Ms": 714,
+      "latencyP95Ms": 692,
       "latencyP99Ms": 947,
       "trend": {
         "state": "stable",

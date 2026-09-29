@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T07:20:46.079Z",
+  "generatedAt": "2026-09-29T08:22:02.744Z",
   "mode": "evidence-grounded-advisory",
   "recommendations": [
     {
       "systemId": "corporate",
       "severity": "elevated",
       "evidence": [
-        "Recent latency is 176% above the prior window."
+        "Recent latency is 205% above the prior window."
       ],
       "recommendation": "Correlate the latency shift with recent deployments and upstream dependencies.",
       "runbook": "runtime-warning"
@@ -28,7 +28,7 @@
       "systemId": "bybit",
       "severity": "high",
       "evidence": [
-        "availability=63.095%",
+        "availability=62.5%",
         "objective=99.9%",
         "burn_rate=1000",
         "p95=634ms"
