@@ -1,13 +1,13 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-29T06:24:36.942Z",
+  "generatedAt": "2026-09-29T07:20:46.079Z",
   "method": "bounded moving-window anomaly and latency trend analysis",
   "note": "Advisory only. Not a guarantee of future outage.",
   "systems": {
     "corporate": {
-      "state": "stable",
-      "confidence": 70,
-      "note": "No material latency trend detected."
+      "state": "degrading",
+      "confidence": 95,
+      "note": "Recent latency is 176% above the prior window."
     },
     "hana": {
       "state": "stable",
