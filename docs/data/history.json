@@ -1,43 +1,8 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-29T18:23:39.125Z",
+  "updatedAt": "2026-09-29T19:20:46.602Z",
   "maxSamples": 168,
   "samples": [
-    {
-      "timestamp": "2026-09-22T20:17:05.935Z",
-      "systems": {
-        "hana": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 145
-        },
-        "corporate": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 252
-        },
-        "api": {
-          "reachable": true,
-          "status": 404,
-          "latencyMs": 329
-        },
-        "identity": {
-          "reachable": true,
-          "status": 404,
-          "latencyMs": 525
-        },
-        "bybit": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 533
-        },
-        "store": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 1810
-        }
-      }
-    },
     {
       "timestamp": "2026-09-22T21:16:21.023Z",
       "systems": {
@@ -5953,6 +5918,42 @@
           "reachable": true,
           "status": 200,
           "latencyMs": 1706
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-29T19:20:46.602Z",
+      "systems": {
+        "bybit": {
+          "reachable": false,
+          "status": 0,
+          "latencyMs": 100,
+          "error": "network-error"
+        },
+        "hana": {
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 130
+        },
+        "corporate": {
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 632
+        },
+        "identity": {
+          "reachable": true,
+          "status": 404,
+          "latencyMs": 319
+        },
+        "api": {
+          "reachable": true,
+          "status": 404,
+          "latencyMs": 435
+        },
+        "store": {
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 1304
         }
       }
     }
