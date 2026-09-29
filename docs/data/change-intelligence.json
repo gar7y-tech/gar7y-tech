@@ -1,26 +1,25 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T11:19:18.705Z",
+  "generatedAt": "2026-09-29T12:25:36.800Z",
   "repository": "gar7y-tech/garhy-gpt-oss-cloud",
   "status": "ready",
   "latestChange": {
-    "sha": "0b19511d0099",
-    "message": "Merge pull request #30 from gar7y-tech/fix/gt-crypto-p2p-response-format",
-    "authoredAt": "2026-09-27T23:49:49Z",
+    "sha": "ea455e9cba4b",
+    "message": "feat(hana): add Wird Amira Islamic assistant endpoint (#31)",
+    "authoredAt": "2026-09-29T12:20:19Z",
     "verified": true,
-    "additions": 27,
-    "deletions": 6,
-    "riskScore": 22,
-    "riskLevel": "low",
+    "additions": 245,
+    "deletions": 1,
+    "riskScore": 30,
+    "riskLevel": "elevated",
     "blastRadius": "review-required",
     "sensitivePaths": [
-      "gt-bybit-app/lib/bybit.js",
-      "gt-bybit-app/test/security.test.js"
+      "hana-ai-pro/api/wird-amira.js"
     ],
     "factors": {
-      "filesChanged": 2,
-      "churn": 33,
-      "sensitivePaths": 2,
+      "filesChanged": 4,
+      "churn": 246,
+      "sensitivePaths": 1,
       "migrations": 0,
       "workflows": 0,
       "tests": 1
