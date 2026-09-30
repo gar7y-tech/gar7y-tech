@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "scope": "public-engineering-surface",
   "systems": [
     {
@@ -15,11 +15,23 @@
       "detail": "Primary GARHY TECH public surface."
     },
     {
+      "id": "controlCenter",
+      "name": "GARHY Control Center",
+      "role": "Operator Platform",
+      "category": "platform",
+      "url": "https://app.garhy.tech",
+      "provider": "Vercel",
+      "visibility": "public",
+      "probe": true,
+      "telemetryKey": "controlCenter",
+      "detail": "Readiness requires the canonical Identity and API dependencies."
+    },
+    {
       "id": "hana",
       "name": "GARHY AI / HANA",
       "role": "AI Product",
       "category": "product",
-      "url": "https://hana-ai-pro.vercel.app",
+      "url": "https://garhy.ai",
       "provider": "Vercel",
       "visibility": "public",
       "probe": true,
@@ -35,16 +47,18 @@
       "url": "https://store.garhy.tech",
       "provider": "Vercel",
       "visibility": "public",
-      "probe": true,
+      "probe": false,
       "telemetryKey": "store",
-      "detail": "Commerce and marketplace surface."
+      "detail": "Historical company metadata only. Excluded from this audit and all synthetic probes.",
+      "auditExcluded": true,
+      "status": "UNVERIFIED"
     },
     {
       "id": "bybit",
-      "name": "GT.BYBIT",
+      "name": "GT CRYPTO",
       "role": "Market Operations",
       "category": "product",
-      "url": "https://bybit.garhy.tech",
+      "url": "https://crypto.garhy.tech",
       "provider": "Vercel",
       "visibility": "public",
       "probe": true,
@@ -86,5 +100,7 @@
       "probe": false,
       "detail": "Public engineering profile, source signals and contribution activity."
     }
-  ]
+  ],
+  "healthContractRevision": "2026-09-30-v1",
+  "canonicalContractSource": "https://github.com/gar7y-tech/garhy-platform/blob/main/packages/observability/health-contracts.mjs"
 }
