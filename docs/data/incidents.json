@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-29T23:17:22.062Z",
+  "updatedAt": "2026-09-30T00:27:52.315Z",
   "incidents": [
     {
       "id": "bybit-1790450143456",
@@ -16,11 +16,13 @@
       "id": "store-1790723850326",
       "systemId": "store",
       "systemName": "GARHY Store",
-      "status": "open",
+      "status": "resolved",
       "severity": "public-edge-degraded",
       "openedAt": "2026-09-29T23:17:22.062Z",
       "summary": "GARHY Store public reachability changed from reachable to unavailable.",
-      "source": "public-observer"
+      "source": "public-observer",
+      "resolvedAt": "2026-09-30T00:27:52.315Z",
+      "resolution": "Public reachability recovered."
     }
   ]
 }
