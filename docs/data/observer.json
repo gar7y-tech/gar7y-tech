@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-30T03:20:25.848Z",
+  "generatedAt": "2026-09-30T03:30:25.650Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,94 +15,94 @@
     "corporate": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 419,
-      "samples": 168,
+      "latencyMs": 258,
+      "samples": 1,
       "availabilityPct": 100,
       "latencyP50Ms": 258,
-      "latencyP95Ms": 671,
-      "latencyP99Ms": 1225,
+      "latencyP95Ms": 258,
+      "latencyP99Ms": 258,
       "trend": {
-        "state": "stable",
-        "confidence": 70,
-        "note": "No material latency trend detected."
+        "state": "warming-up",
+        "confidence": 0,
+        "note": "Collecting historical telemetry."
+      }
+    },
+    "controlCenter": {
+      "reachable": true,
+      "status": 200,
+      "latencyMs": 980,
+      "samples": 1,
+      "availabilityPct": 100,
+      "latencyP50Ms": 980,
+      "latencyP95Ms": 980,
+      "latencyP99Ms": 980,
+      "trend": {
+        "state": "warming-up",
+        "confidence": 0,
+        "note": "Collecting historical telemetry."
       }
     },
     "hana": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 274,
-      "samples": 168,
+      "latencyMs": 364,
+      "samples": 1,
       "availabilityPct": 100,
-      "latencyP50Ms": 138,
-      "latencyP95Ms": 338,
-      "latencyP99Ms": 461,
+      "latencyP50Ms": 364,
+      "latencyP95Ms": 364,
+      "latencyP99Ms": 364,
       "trend": {
-        "state": "stable",
-        "confidence": 70,
-        "note": "No material latency trend detected."
-      }
-    },
-    "store": {
-      "reachable": true,
-      "status": 200,
-      "latencyMs": 1759,
-      "samples": 168,
-      "availabilityPct": 99.405,
-      "latencyP50Ms": 1413,
-      "latencyP95Ms": 1960,
-      "latencyP99Ms": 3231,
-      "trend": {
-        "state": "improving",
-        "confidence": 49,
-        "note": "Recent latency improved versus the prior window."
+        "state": "warming-up",
+        "confidence": 0,
+        "note": "Collecting historical telemetry."
       }
     },
     "bybit": {
-      "reachable": false,
-      "status": 0,
-      "latencyMs": 203,
-      "samples": 168,
-      "availabilityPct": 51.19,
-      "latencyP50Ms": 357,
-      "latencyP95Ms": 642,
-      "latencyP99Ms": 762,
+      "reachable": true,
+      "status": 200,
+      "latencyMs": 1176,
+      "samples": 1,
+      "availabilityPct": 100,
+      "latencyP50Ms": 1176,
+      "latencyP95Ms": 1176,
+      "latencyP99Ms": 1176,
       "trend": {
-        "state": "stable",
-        "confidence": 70,
-        "note": "No material latency trend detected."
+        "state": "warming-up",
+        "confidence": 0,
+        "note": "Collecting historical telemetry."
       }
     },
     "api": {
       "reachable": true,
-      "status": 404,
-      "latencyMs": 573,
-      "samples": 168,
+      "status": 200,
+      "latencyMs": 968,
+      "samples": 1,
       "availabilityPct": 100,
-      "latencyP50Ms": 336,
-      "latencyP95Ms": 598,
-      "latencyP99Ms": 1100,
+      "latencyP50Ms": 968,
+      "latencyP95Ms": 968,
+      "latencyP99Ms": 968,
       "trend": {
-        "state": "stable",
-        "confidence": 70,
-        "note": "No material latency trend detected."
+        "state": "warming-up",
+        "confidence": 0,
+        "note": "Collecting historical telemetry."
       }
     },
     "identity": {
       "reachable": true,
-      "status": 404,
-      "latencyMs": 537,
-      "samples": 168,
+      "status": 200,
+      "latencyMs": 972,
+      "samples": 1,
       "availabilityPct": 100,
-      "latencyP50Ms": 388,
-      "latencyP95Ms": 651,
-      "latencyP99Ms": 947,
+      "latencyP50Ms": 972,
+      "latencyP95Ms": 972,
+      "latencyP99Ms": 972,
       "trend": {
-        "state": "stable",
-        "confidence": 70,
-        "note": "No material latency trend detected."
+        "state": "warming-up",
+        "confidence": 0,
+        "note": "Collecting historical telemetry."
       }
     }
   },
-  "openIncidents": 1,
+  "openIncidents": 0,
   "historyWindowSamples": 168
 }

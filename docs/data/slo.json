@@ -1,67 +1,67 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T03:20:25.848Z",
-  "basis": "synthetic-public-reachability",
+  "generatedAt": "2026-09-30T03:30:25.650Z",
+  "basis": "service-specific-health-contracts-v1",
   "systems": {
     "corporate": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 671,
+      "latencyP95Ms": 258,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 168
+      "sampleBasis": 1
+    },
+    "controlCenter": {
+      "objectivePct": 99.9,
+      "observedAvailabilityPct": 100,
+      "errorBudgetRemainingPct": 100,
+      "burnRate": 0,
+      "latencyP95Ms": 980,
+      "latencyP95TargetMs": 1500,
+      "state": "within-objective",
+      "sampleBasis": 1
     },
     "hana": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 338,
+      "latencyP95Ms": 364,
       "latencyP95TargetMs": 1500,
       "state": "within-objective",
-      "sampleBasis": 168
-    },
-    "store": {
-      "objectivePct": 99.9,
-      "observedAvailabilityPct": 99.405,
-      "errorBudgetRemainingPct": 0,
-      "burnRate": 41.67,
-      "latencyP95Ms": 1960,
-      "latencyP95TargetMs": 1500,
-      "state": "at-risk",
-      "sampleBasis": 168
+      "sampleBasis": 1
     },
     "bybit": {
       "objectivePct": 99.9,
-      "observedAvailabilityPct": 51.19,
-      "errorBudgetRemainingPct": 0,
-      "burnRate": 1000,
-      "latencyP95Ms": 642,
+      "observedAvailabilityPct": 100,
+      "errorBudgetRemainingPct": 100,
+      "burnRate": 0,
+      "latencyP95Ms": 1176,
       "latencyP95TargetMs": 1500,
-      "state": "at-risk",
-      "sampleBasis": 168
+      "state": "within-objective",
+      "sampleBasis": 1
     },
     "api": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 598,
+      "latencyP95Ms": 968,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 168
+      "sampleBasis": 1
     },
     "identity": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 651,
+      "latencyP95Ms": 972,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 168
+      "sampleBasis": 1
     }
   }
 }

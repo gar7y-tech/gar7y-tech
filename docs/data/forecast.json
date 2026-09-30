@@ -1,38 +1,38 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-30T03:20:25.848Z",
+  "generatedAt": "2026-09-30T03:30:25.650Z",
   "method": "bounded moving-window anomaly and latency trend analysis",
   "note": "Advisory only. Not a guarantee of future outage.",
   "systems": {
     "corporate": {
-      "state": "stable",
-      "confidence": 70,
-      "note": "No material latency trend detected."
+      "state": "warming-up",
+      "confidence": 0,
+      "note": "Collecting historical telemetry."
+    },
+    "controlCenter": {
+      "state": "warming-up",
+      "confidence": 0,
+      "note": "Collecting historical telemetry."
     },
     "hana": {
-      "state": "stable",
-      "confidence": 70,
-      "note": "No material latency trend detected."
-    },
-    "store": {
-      "state": "improving",
-      "confidence": 49,
-      "note": "Recent latency improved versus the prior window."
+      "state": "warming-up",
+      "confidence": 0,
+      "note": "Collecting historical telemetry."
     },
     "bybit": {
-      "state": "stable",
-      "confidence": 70,
-      "note": "No material latency trend detected."
+      "state": "warming-up",
+      "confidence": 0,
+      "note": "Collecting historical telemetry."
     },
     "api": {
-      "state": "stable",
-      "confidence": 70,
-      "note": "No material latency trend detected."
+      "state": "warming-up",
+      "confidence": 0,
+      "note": "Collecting historical telemetry."
     },
     "identity": {
-      "state": "stable",
-      "confidence": 70,
-      "note": "No material latency trend detected."
+      "state": "warming-up",
+      "confidence": 0,
+      "note": "Collecting historical telemetry."
     }
   }
 }
