@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T01:19:45.439Z",
+  "generatedAt": "2026-09-30T02:18:39.957Z",
   "basis": "synthetic-public-reachability",
   "systems": {
     "corporate": {
@@ -35,7 +35,7 @@
     },
     "bybit": {
       "objectivePct": 99.9,
-      "observedAvailabilityPct": 52.381,
+      "observedAvailabilityPct": 51.786,
       "errorBudgetRemainingPct": 0,
       "burnRate": 1000,
       "latencyP95Ms": 642,
