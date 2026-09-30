@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/refresh-mission-control.mjs'
+      - 'scripts/health-contracts.mjs'
       - 'docs/data/registry.json'
       - 'docs/data/topology.json'
       - 'docs/data/slo-policy.json'
@@ -15,53 +16,78 @@ on:
     - cron: '7 * * * *'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: mission-control-observer
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   observe:
     runs-on: ubuntu-latest
     timeout-minutes: 8
+    # Writes are limited to a reviewed data PR. There is no push to main.
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout repository without external actions
+      - name: Checkout approved source and pending observation history
         shell: bash
         run: |
           set -euo pipefail
           git init .
           git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
-          git fetch --depth=1 origin "${GITHUB_SHA}"
+          git fetch --depth=1000 origin "${GITHUB_SHA}"
           git checkout -B main FETCH_HEAD
+          pending=$(gh pr list --state open --limit 100 --json headRefName,title,author --jq '.[] | select(.title == "chore(monitoring): refresh observed state") | select(.author.login == "app/github-actions" or .author.login == "github-actions[bot]") | .headRefName')
+          if [ -n "$pending" ]; then
+            [[ "$pending" =~ ^ops/mission-control-state-[0-9]+$ ]] || exit 1
+            git fetch --depth=1000 origin "$pending"
+            git merge-base --is-ancestor main FETCH_HEAD || { echo 'BLOCKED: pending observation PR needs rebase onto current main'; exit 1; }
+            git diff --name-only main FETCH_HEAD | node scripts/validate-observer-paths.mjs
+            git checkout -B "$pending" FETCH_HEAD
+            echo "OBSERVER_BRANCH=$pending" >> "$GITHUB_ENV"
+          else
+            branch="ops/mission-control-state-${GITHUB_RUN_ID}"
+            git checkout -b "$branch"
+            echo "OBSERVER_BRANCH=$branch" >> "$GITHUB_ENV"
+          fi
 
       - name: Refresh public engineering intelligence
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
-        run: |
-          set -euo pipefail
-          node scripts/refresh-mission-control.mjs
+        run: node scripts/refresh-mission-control.mjs
 
       - name: Validate generated intelligence
         shell: bash
         run: |
           set -euo pipefail
           node scripts/validate-profile.mjs
+          node --test scripts/health-contracts.test.mjs
 
-      - name: Commit observer state
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish observation for review
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/history.json docs/data/incidents.json docs/data/observer.json docs/data/forecast.json docs/data/change-intelligence.json docs/data/slo.json docs/data/impact.json docs/data/recommendations.json
+          git diff --cached --name-only | node scripts/validate-observer-paths.mjs
           if git diff --cached --quiet; then
             echo "No observer state change."
             exit 0
           fi
-          git commit -m "chore(engineering-os): refresh public intelligence"
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git push origin HEAD:main
+          git commit -m "chore(monitoring): refresh observed state"
+          gh auth setup-git
+          git push origin "HEAD:${OBSERVER_BRANCH}"
+          if ! gh pr view "$OBSERVER_BRANCH" --json state --jq .state >/dev/null 2>&1; then
+            cat > /tmp/observer-pr.md <<'BODY'
+          Actual service-specific production observations. History is preserved; only the eight allowlisted JSON data files can change.
+
+          The observer validated the generated data and health contracts before committing. Review this snapshot and its workflow evidence before merging. There is no automatic merge or write to main.
+          BODY
+            gh pr create --base main --head "$OBSERVER_BRANCH" --title "chore(monitoring): refresh observed state" --body-file /tmp/observer-pr.md
+          fi

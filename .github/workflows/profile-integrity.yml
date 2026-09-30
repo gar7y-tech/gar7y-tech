@@ -43,3 +43,4 @@ jobs:
           set -euo pipefail
           node --version
           node scripts/validate-profile.mjs
+          node --test scripts/health-contracts.test.mjs scripts/validate-observer-paths.test.mjs
