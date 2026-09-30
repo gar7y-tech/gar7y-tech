@@ -2,9 +2,9 @@
 
 <img src="./assets/command-center.svg" alt="Ahmed El Garhy — GARHY TECH Engineering Profile" width="100%" />
 
-# Ahmed El Garhy
+# Ahmed Atef Ali Salem El Garhy
 
-### Founder @ GARHY TECH · AI Automation & Software Developer
+### Founder & CEO @ GARHY TECH · Software Developer
 
 **AI Agents · Workflow Automation · API Integrations · Full-Stack Development · Cloud · DevOps**
 
@@ -130,9 +130,9 @@ UNDERSTAND -> ARCHITECT -> AUTOMATE -> BUILD -> VERIFY -> DEPLOY -> OBSERVE -> I
 
 ## Contact
 
-**Ahmed El Garhy**  
-Founder @ **GARHY TECH**  
-AI Automation & Software Developer
+**Ahmed Atef Ali Salem El Garhy**  
+Founder & CEO @ **GARHY TECH**  
+Software Developer
 
 - Email: [founder@garhy.tech](mailto:founder@garhy.tech)
 - LinkedIn: [Ahmed El Garhy](https://www.linkedin.com/in/ahmed-el-garhy-a9b321431)
