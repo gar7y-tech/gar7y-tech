@@ -1,43 +1,8 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-30T03:20:25.848Z",
+  "updatedAt": "2026-09-30T03:30:25.650Z",
   "maxSamples": 168,
   "samples": [
-    {
-      "timestamp": "2026-09-23T05:17:01.683Z",
-      "systems": {
-        "hana": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 159
-        },
-        "corporate": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 254
-        },
-        "api": {
-          "reachable": true,
-          "status": 404,
-          "latencyMs": 425
-        },
-        "identity": {
-          "reachable": true,
-          "status": 404,
-          "latencyMs": 491
-        },
-        "bybit": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 671
-        },
-        "store": {
-          "reachable": true,
-          "status": 200,
-          "latencyMs": 1343
-        }
-      }
-    },
     {
       "timestamp": "2026-09-23T06:24:07.641Z",
       "systems": {
@@ -5963,6 +5928,65 @@
           "reachable": true,
           "status": 200,
           "latencyMs": 1759
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-30T03:30:25.650Z",
+      "systems": {
+        "corporate": {
+          "name": "corporate",
+          "url": "https://garhy.tech/",
+          "path": "/",
+          "contractRevision": "2026-09-30-v1",
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 258
+        },
+        "hana": {
+          "name": "hana",
+          "url": "https://garhy.ai/api/health",
+          "path": "/api/health",
+          "contractRevision": "2026-09-30-v1",
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 364
+        },
+        "api": {
+          "name": "api",
+          "url": "https://api.garhy.tech/readyz",
+          "path": "/readyz",
+          "contractRevision": "2026-09-30-v1",
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 968
+        },
+        "identity": {
+          "name": "identity",
+          "url": "https://id.garhy.tech/readyz",
+          "path": "/readyz",
+          "contractRevision": "2026-09-30-v1",
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 972
+        },
+        "controlCenter": {
+          "name": "controlCenter",
+          "url": "https://app.garhy.tech/readyz",
+          "path": "/readyz",
+          "contractRevision": "2026-09-30-v1",
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 980
+        },
+        "bybit": {
+          "name": "bybit",
+          "url": "https://crypto.garhy.tech/api/bybit?action=health",
+          "path": "/api/bybit",
+          "contractRevision": "2026-09-30-v1",
+          "reachable": true,
+          "status": 200,
+          "latencyMs": 1176
         }
       }
     }
