@@ -6,15 +6,19 @@
   "scope": "/gar7y-tech/",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#05080c",
-  "theme_color": "#05080c",
-  "categories": ["developer", "productivity", "utilities"],
+  "background_color": "#090d14",
+  "theme_color": "#090d14",
+  "categories": [
+    "developer",
+    "productivity",
+    "utilities"
+  ],
   "icons": [
     {
-      "src": "./icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "./assets/identity/gt-dark-metal.jpg",
+      "sizes": "1536x1536",
+      "type": "image/jpeg",
+      "purpose": "any"
     }
   ]
 }
