@@ -1,6 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T03:30:25.650Z",
+  "generatedAt": "2026-10-01T07:22:10.334Z",
   "mode": "evidence-grounded-advisory",
-  "recommendations": []
+  "recommendations": [
+    {
+      "systemId": "controlCenter",
+      "severity": "elevated",
+      "evidence": [
+        "availability=100%",
+        "objective=99.9%",
+        "burn_rate=0",
+        "p95=1633ms"
+      ],
+      "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
+      "runbook": "public-edge-unreachable"
+    },
+    {
+      "systemId": "api",
+      "severity": "elevated",
+      "evidence": [
+        "availability=100%",
+        "objective=99.9%",
+        "burn_rate=0",
+        "p95=1221ms"
+      ],
+      "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
+      "runbook": "public-edge-unreachable"
+    },
+    {
+      "systemId": "identity",
+      "severity": "elevated",
+      "evidence": [
+        "availability=100%",
+        "objective=99.9%",
+        "burn_rate=0",
+        "p95=1221ms"
+      ],
+      "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
+      "runbook": "public-edge-unreachable"
+    }
+  ]
 }
