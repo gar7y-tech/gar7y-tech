@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-30T03:30:25.650Z",
+  "updatedAt": "2026-10-01T16:20:30.102Z",
   "incidents": [
     {
       "id": "bybit-1790450143456",
@@ -26,6 +26,17 @@
       "source": "public-observer",
       "resolvedAt": "2026-09-30T00:27:52.315Z",
       "resolution": "Public reachability recovered."
+    },
+    {
+      "id": "identity-1790871633380",
+      "systemId": "identity",
+      "systemName": "GARHY ID",
+      "status": "open",
+      "severity": "public-edge-degraded",
+      "openedAt": "2026-10-01T16:20:30.102Z",
+      "summary": "GARHY ID failed its service-specific production health contract.",
+      "contractRevision": "2026-09-30-v1",
+      "source": "public-observer"
     }
   ]
 }
