@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T03:30:25.650Z",
+  "generatedAt": "2026-10-02T16:20:30.142Z",
   "basis": "service-specific-health-contracts-v1",
   "systems": {
     "corporate": {
@@ -11,27 +11,27 @@
       "latencyP95Ms": 258,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 1
+      "sampleBasis": 2
     },
     "controlCenter": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 980,
+      "latencyP95Ms": 2937,
       "latencyP95TargetMs": 1500,
-      "state": "within-objective",
-      "sampleBasis": 1
+      "state": "at-risk",
+      "sampleBasis": 2
     },
     "hana": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 364,
+      "latencyP95Ms": 373,
       "latencyP95TargetMs": 1500,
       "state": "within-objective",
-      "sampleBasis": 1
+      "sampleBasis": 2
     },
     "bybit": {
       "objectivePct": 99.9,
@@ -41,27 +41,27 @@
       "latencyP95Ms": 1176,
       "latencyP95TargetMs": 1500,
       "state": "within-objective",
-      "sampleBasis": 1
+      "sampleBasis": 2
     },
     "api": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 968,
+      "latencyP95Ms": 980,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 1
+      "sampleBasis": 2
     },
     "identity": {
       "objectivePct": 99.9,
       "observedAvailabilityPct": 100,
       "errorBudgetRemainingPct": 100,
       "burnRate": 0,
-      "latencyP95Ms": 972,
+      "latencyP95Ms": 1068,
       "latencyP95TargetMs": 1200,
       "state": "within-objective",
-      "sampleBasis": 1
+      "sampleBasis": 2
     }
   }
 }
