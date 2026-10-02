@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-30T03:30:25.650Z",
+  "generatedAt": "2026-10-02T01:19:31.787Z",
   "source": "GitHub Actions public observer",
   "mode": "advisory-only",
   "signals": [
@@ -15,10 +15,10 @@
     "corporate": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 258,
-      "samples": 1,
+      "latencyMs": 212,
+      "samples": 2,
       "availabilityPct": 100,
-      "latencyP50Ms": 258,
+      "latencyP50Ms": 212,
       "latencyP95Ms": 258,
       "latencyP99Ms": 258,
       "trend": {
@@ -30,12 +30,12 @@
     "controlCenter": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 980,
-      "samples": 1,
+      "latencyMs": 1216,
+      "samples": 2,
       "availabilityPct": 100,
       "latencyP50Ms": 980,
-      "latencyP95Ms": 980,
-      "latencyP99Ms": 980,
+      "latencyP95Ms": 1216,
+      "latencyP99Ms": 1216,
       "trend": {
         "state": "warming-up",
         "confidence": 0,
@@ -45,12 +45,12 @@
     "hana": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 364,
-      "samples": 1,
+      "latencyMs": 776,
+      "samples": 2,
       "availabilityPct": 100,
       "latencyP50Ms": 364,
-      "latencyP95Ms": 364,
-      "latencyP99Ms": 364,
+      "latencyP95Ms": 776,
+      "latencyP99Ms": 776,
       "trend": {
         "state": "warming-up",
         "confidence": 0,
@@ -60,12 +60,12 @@
     "bybit": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 1176,
-      "samples": 1,
+      "latencyMs": 1956,
+      "samples": 2,
       "availabilityPct": 100,
       "latencyP50Ms": 1176,
-      "latencyP95Ms": 1176,
-      "latencyP99Ms": 1176,
+      "latencyP95Ms": 1956,
+      "latencyP99Ms": 1956,
       "trend": {
         "state": "warming-up",
         "confidence": 0,
@@ -75,12 +75,12 @@
     "api": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 968,
-      "samples": 1,
+      "latencyMs": 1187,
+      "samples": 2,
       "availabilityPct": 100,
       "latencyP50Ms": 968,
-      "latencyP95Ms": 968,
-      "latencyP99Ms": 968,
+      "latencyP95Ms": 1187,
+      "latencyP99Ms": 1187,
       "trend": {
         "state": "warming-up",
         "confidence": 0,
@@ -90,12 +90,12 @@
     "identity": {
       "reachable": true,
       "status": 200,
-      "latencyMs": 972,
-      "samples": 1,
+      "latencyMs": 1402,
+      "samples": 2,
       "availabilityPct": 100,
       "latencyP50Ms": 972,
-      "latencyP95Ms": 972,
-      "latencyP99Ms": 972,
+      "latencyP95Ms": 1402,
+      "latencyP99Ms": 1402,
       "trend": {
         "state": "warming-up",
         "confidence": 0,
