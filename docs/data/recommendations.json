@@ -1,6 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T03:30:25.650Z",
+  "generatedAt": "2026-10-02T15:22:03.013Z",
   "mode": "evidence-grounded-advisory",
-  "recommendations": []
+  "recommendations": [
+    {
+      "systemId": "controlCenter",
+      "severity": "high",
+      "evidence": [
+        "availability=50%",
+        "objective=99.9%",
+        "burn_rate=500",
+        "p95=980ms"
+      ],
+      "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
+      "runbook": "public-edge-unreachable"
+    }
+  ]
 }
