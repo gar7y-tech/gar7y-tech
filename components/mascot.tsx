@@ -37,7 +37,7 @@ export function Mascot({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="mascot-reference"
-        src="https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/fire-mascot.webp"
+        src="/fire-mascot.svg"
         alt=""
         width="1254"
         height="1254"
