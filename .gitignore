@@ -1,8 +1,8 @@
+# Local/editor state
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
 node_modules/
-.next/
-.vercel/
-test-results/
-playwright-report/
-*.tsbuildinfo
-.env*
-.vercel
