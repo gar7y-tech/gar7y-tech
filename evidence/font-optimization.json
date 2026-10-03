@@ -1,0 +1,26 @@
+[
+  {
+    "file": "arabic-500.woff2",
+    "before": 100020,
+    "after": 71652,
+    "glyphsUnchanged": true
+  },
+  {
+    "file": "arabic-600.woff2",
+    "before": 100524,
+    "after": 72176,
+    "glyphsUnchanged": true
+  },
+  {
+    "file": "arabic-400.woff2",
+    "before": 95476,
+    "after": 67924,
+    "glyphsUnchanged": true
+  },
+  {
+    "file": "arabic-700.woff2",
+    "before": 97580,
+    "after": 69504,
+    "glyphsUnchanged": true
+  }
+]

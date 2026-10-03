@@ -1,0 +1,185 @@
+{
+  "method": "lossless only; retain existing when larger",
+  "images": [
+    {
+      "file": "public/fire-mascot.webp",
+      "before": 141388,
+      "after": 141388,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/airpods-4.webp",
+      "before": 33090,
+      "after": 33090,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/anker-nano-45w.webp",
+      "before": 52380,
+      "after": 52380,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/anker-nano-power-10k.webp",
+      "before": 28006,
+      "after": 28006,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/anker-zolo-18m.webp",
+      "before": 36244,
+      "after": 36244,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/galaxy-a16-4g-grey.webp",
+      "before": 34038,
+      "after": 34038,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/galaxy-a16-5g-black.webp",
+      "before": 22826,
+      "after": 22826,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-17-pro-256-silver.webp",
+      "before": 21566,
+      "after": 21566,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-1tb-silver.webp",
+      "before": 18544,
+      "after": 18544,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-256gb-silver.webp",
+      "before": 18544,
+      "after": 18544,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-2tb-silver.webp",
+      "before": 18544,
+      "after": 18544,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-512gb-black.webp",
+      "before": 17826,
+      "after": 17826,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-max-1tb-silver.webp",
+      "before": 19322,
+      "after": 19322,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-max-256gb-black.webp",
+      "before": 19436,
+      "after": 19436,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-max-2tb-silver.webp",
+      "before": 19322,
+      "after": 19322,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone-18-pro-max-512gb-black.webp",
+      "before": 19436,
+      "after": 19436,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/iphone18-hero.webp",
+      "before": 21390,
+      "after": 21390,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/jbl-go-4-black.webp",
+      "before": 44446,
+      "after": 44446,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/jbl-wave-buds-2-white.webp",
+      "before": 19784,
+      "after": 19784,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/ps5-slim-disc.webp",
+      "before": 14512,
+      "after": 14512,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/smartix-iphone-air-black.webp",
+      "before": 17140,
+      "after": 17140,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/switch-2-mario-kart.webp",
+      "before": 65726,
+      "after": 65726,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/watch-fit-3-black.webp",
+      "before": 36202,
+      "after": 36202,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/products/watch-fit-3-grey.webp",
+      "before": 80754,
+      "after": 80754,
+      "pixelIdentical": true,
+      "applied": false
+    },
+    {
+      "file": "public/rock-original.webp",
+      "before": 126518,
+      "after": 126518,
+      "pixelIdentical": true,
+      "applied": false
+    }
+  ],
+  "character": {
+    "raw": 1896788,
+    "transfer": 586670,
+    "identicalAfterDecompression": true
+  }
+}

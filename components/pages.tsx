@@ -29,8 +29,6 @@ import {
   price,
   amount,
   localized,
-  isMarketplaceReference,
-  hasVerifiedReference,
 } from "@/lib/store";
 export function OffersBanner() {
   const { t } = useShop();
@@ -45,8 +43,8 @@ export function OffersBanner() {
         </h2>
         <p>
           {t(
-            "خصم التجزئة والجملة يطبّق فقط عندما يكون المرجع العُماني الحالي مؤهلًا؛ الأسعار غير المؤكدة تُراجع قبل الدفع.",
-            "Retail and trade discounts apply only when a current Omani reference is qualified; unverified prices are reviewed before payment.",
+            "خصومات على جميع المنتجات من أسعار مرجعية موثقة في السوق العُماني.",
+            "Every product discounted from documented Omani market reference prices.",
           )}
         </p>
         <Link href="/offers" className="button banner-button">
@@ -114,7 +112,7 @@ export function HomeContent() {
         <div className="hero-visual">
           <div className="hero-photo">
             <Photo
-              src="https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone18-hero.webp"
+              src="/products/iphone18-hero.webp"
               alt={t(
                 "iPhone 18 Pro وPro Max باللون العنّابي",
                 "iPhone 18 Pro and Pro Max in burgundy",
@@ -125,14 +123,14 @@ export function HomeContent() {
           </div>
           <div className="hero-mini watch">
             <Photo
-              src="https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/watch-fit-3-black.webp"
+              src="/products/watch-fit-3-black.webp"
               alt={t("ساعة Huawei WATCH FIT 3", "Huawei WATCH FIT 3")}
               sizes="160px"
             />
           </div>
           <div className="hero-mini buds">
             <Photo
-              src="https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/airpods-4.webp"
+              src="/products/airpods-4.webp"
               alt="Apple AirPods 4"
               sizes="140px"
             />
@@ -222,7 +220,7 @@ export function HomeContent() {
         </div>
         <div className="gaming-photo">
           <Photo
-            src="https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/switch-2-mario-kart.webp"
+            src="/products/switch-2-mario-kart.webp"
             alt="Nintendo Switch 2"
             sizes="(max-width:768px) 90vw, 48vw"
           />
@@ -306,8 +304,8 @@ export function CatalogContent({
         <p>
           {offers
             ? t(
-                "تظهر هنا فقط المنتجات ذات المرجع العُماني المؤهل: 10% للتجزئة و17% للجملة أثناء صلاحية التحقق.",
-                "Only products with a qualified Omani reference appear here: 10% retail and 17% trade while verification remains valid.",
+                "تجزئة أقل 10%، وجملة للتجار والمحلات أقل 17% من السعر المرجعي.",
+                "10% off for retail, 17% off for traders and shops, based on reference prices.",
               )
             : t(
                 "هواتف وإلكترونيات وألعاب وبطاقات هدايا، في مكان واحد.",
@@ -337,29 +335,14 @@ export function DetailContent({ product: original }: { product: Product }) {
         <div className="detail-copy">
           <span className="eyebrow">{p.brand}</span>
           <h1>{p.name}</h1>
-          <PriceSelector product={original} />
+          <PriceSelector />
           <div className="detail-price">
             <strong>{price(amount(p, mode), lang)}</strong>
-            {isMarketplaceReference(original) ? (
-              <span className="price-reference">
-                {p.source.currency === "USD"
-                  ? t(
-                      `سعر المصدر وقت المراجعة: $${p.source.price.toFixed(2)} USD`,
-                      `Source price at review: $${p.source.price.toFixed(2)} USD`,
-                    )
-                  : t("سعر مرجعي خارجي", "External reference price")}
-              </span>
-            ) : hasVerifiedReference(original) ? (
-              <del
-                title={t("السعر المرجعي لدى المصدر", "Retailer reference price")}
-              >
-                {price(p.source.price, lang)}
-              </del>
-            ) : (
-              <span className="price-reference">
-                {t("المرجع يحتاج إعادة تحقق", "Reference needs re-verification")}
-              </span>
-            )}
+            <del
+              title={t("السعر المرجعي لدى المصدر", "Retailer reference price")}
+            >
+              {price(p.source.price, lang)}
+            </del>
           </div>
           <p className="notice">
             {t(
@@ -385,28 +368,17 @@ export function DetailContent({ product: original }: { product: Product }) {
           </h2>
           <p className="detail-description">{p.description}</p>
           <p className="price-reference">
-            {isMarketplaceReference(original)
-              ? t(
-                  "السعر المعروض مرجع تقريبي محوّل من سعر العرض الخارجي وقت المراجعة. التوفر والسعر النهائي وبيانات نقل الحساب تؤكد قبل الدفع لدى MR ROBOT. المصدر: ",
-                  "The displayed amount is an approximate OMR reference converted from the external listing at review time. Availability, final price and account transfer details are confirmed by MR ROBOT before payment. Source: ",
-                )
-              : hasVerifiedReference(original)
-                ? t(
-                    `خصم ${mode === "retail" ? "10" : "17"}% من المرجع العُماني المؤهل لدى `,
-                    `${mode === "retail" ? "10" : "17"}% below the qualified Omani reference at `,
-                  )
-                : t(
-                    "لا نعرض سعرًا قديمًا كأنه حالي. المرجع السابق محفوظ للتدقيق ويحتاج إعادة تحقق قبل تقديم سعر نهائي. المصدر السابق: ",
-                    "We do not present a legacy price as current. The previous reference is retained for audit and must be re-verified before a final price is offered. Previous source: ",
-                  )}
+            {t(
+              `خصم ${mode === "retail" ? "10" : "17"}% من السعر المرجعي لدى `,
+              `${mode === "retail" ? "10" : "17"}% below the reference price at `,
+            )}
             <a href={p.source.url} target="_blank" rel="noopener noreferrer">
               {p.source.name}
             </a>
-            {hasVerifiedReference(original) &&
-              t(
-                `، تمت مراجعته في ${p.source.retrievedAt}. السعر المشطوب سعر المصدر وليس سعرًا سابقًا لدى MR ROBOT.`,
-                `. Checked ${p.source.retrievedAt}. The struck-through amount is the source reference, not a previous MR ROBOT price.`,
-              )}
+            {t(
+              "، بتاريخ 30 سبتمبر 2026. السعر المشطوب هو سعر المصدر، وليس سعرًا سابقًا لدى MR ROBOT.",
+              ". Checked 30 September 2026. The struck-through amount is the retailer reference price, not a previous MR ROBOT price.",
+            )}
           </p>
         </div>
       </div>

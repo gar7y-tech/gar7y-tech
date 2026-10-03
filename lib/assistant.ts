@@ -37,10 +37,10 @@ export function matchesAssistant(
   return (
     (!category || p.category === category) &&
     (!model || normalize(p.en.name).includes(model)) &&
-    (!budget || (() => {
-      const value = amount(p, mode);
-      return value !== null && (exclusive ? value < Number(budget) : value <= Number(budget));
-    })())
+    (!budget ||
+      (exclusive
+        ? amount(p, mode) < Number(budget)
+        : amount(p, mode) <= Number(budget)))
   );
 }
 
@@ -56,15 +56,6 @@ export function resolveAssistantQuery(
 ) {
   const parsed = parseAssistantQuery(raw);
   const rules: [RegExp, string][] = [
-    [/لوحي|تابلت|tablet|ipad/, "الأجهزة اللوحية"],
-    [/لابتوب|محمول|laptop|notebook|surface/, "الحواسيب المحمولة"],
-    [/شاشه|شاشة|monitor/, "الشاشات"],
-    [/طابع|printer|epson|pixma/, "الطابعات"],
-    [/تخزين|هارد|ssd|storage/, "التخزين"],
-    [/راوتر|شبك|router|network|archer/, "الشبكات"],
-    [/منزل|مكنسه|مكنسة|smart home|vacuum|tapo/, "المنزل الذكي"],
-    [/ويب|ماوس|كيبورد|webcam|mouse|keyboard/, "ملحقات الكمبيوتر"],
-    [/كاميرا|camera|polaroid/, "الكاميرات"],
     [/هاتف|جوال|phone|iphone|ايفون|آيفون|galaxy|جالاكسي|جالكسي/, "الهواتف"],
     [/ساعه|ساعة|watch/, "الساعات الذكية"],
     [/سماع|صوت|earbud|speaker|headphone/, "الصوتيات"],
@@ -72,7 +63,7 @@ export function resolveAssistantQuery(
     [/كابل|غطاء|accessor|cable/, "الإكسسوارات"],
     [/بطاق|gift|steam/, "بطاقات الهدايا"],
     [/pubg|اونلاين|online|\buc\b/, "الألعاب أونلاين"],
-    [/فورت|fortnite|لعب|game|console|ps5|switch/, "ألعاب الفيديو"],
+    [/لعب|game|console|ps5|switch/, "ألعاب الفيديو"],
   ];
   const explicitCategory = rules.find(([pattern]) =>
     pattern.test(parsed.text),

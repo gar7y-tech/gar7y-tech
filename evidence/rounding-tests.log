@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+Running 11 tests using 1 worker
+
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/catalog.spec.ts:19:5 › All catalog reference prices yield the exact baisa-rounded independent discounts (73ms)
+  ✓   2 tests/catalog.spec.ts:33:5 › Every product has bilingual factual copy and existing local images (46ms)
+  ✓   3 tests/catalog.spec.ts:45:5 › All WhatsApp product messages agree with the order mode and translated prices (265ms)
+  ✓   4 tests/catalog.spec.ts:65:7 › Model number is not a budget: iPhone 18 أقل من 600 ريال (5ms)
+  ✓   5 tests/catalog.spec.ts:65:7 › Model number is not a budget: iPhone 18 under 600 OMR (2ms)
+  ✓   6 tests/catalog.spec.ts:65:7 › Model number is not a budget: iPhone 18 أقل من ٦٠٠ ريال (2ms)
+  ✓   7 tests/catalog.spec.ts:87:5 › Model-only and storage-only queries do not manufacture a budget (1ms)
+  ✓   8 tests/catalog.spec.ts:93:5 › Real GLB has skinned meshes, sixteen weighted bones and six playable state clips (43ms)
+  ✓   9 tests/catalog.spec.ts:119:5 › Arabic models, inclusive budgets and contextual follow-ups preserve the intended selection (3ms)
+  ✓  10 tests/catalog.spec.ts:141:5 › Compressed character restores the exact rig and CSS font assets exist (7ms)
+  ✓  11 tests/catalog.spec.ts:153:5 › Half-baisa discounts round upward and remain consistent in WhatsApp (1ms)
+
+  11 passed (1.2s)

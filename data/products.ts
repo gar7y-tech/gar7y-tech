@@ -10,15 +10,6 @@ export const categories = [
   "ألعاب الفيديو",
   "بطاقات الهدايا",
   "الألعاب أونلاين",
-  "الأجهزة اللوحية",
-  "الحواسيب المحمولة",
-  "الشاشات",
-  "ملحقات الكمبيوتر",
-  "التخزين",
-  "الشبكات",
-  "الطابعات",
-  "الكاميرات",
-  "المنزل الذكي",
   "عروض الجملة",
 ] as const;
 export const categoriesEn: Record<string, string> = {
@@ -30,15 +21,6 @@ export const categoriesEn: Record<string, string> = {
   "ألعاب الفيديو": "Video games",
   "بطاقات الهدايا": "Gift cards",
   "الألعاب أونلاين": "Online games",
-  "الأجهزة اللوحية": "Tablets",
-  "الحواسيب المحمولة": "Laptops",
-  "الشاشات": "Monitors",
-  "ملحقات الكمبيوتر": "Computer accessories",
-  "التخزين": "Storage",
-  "الشبكات": "Networking",
-  "الطابعات": "Printers",
-  "الكاميرات": "Cameras",
-  "المنزل الذكي": "Smart home",
   "عروض الجملة": "Wholesale",
 };
 export type Category = (typeof categories)[number];
@@ -64,22 +46,13 @@ export interface Product extends ProductTranslation {
   en: ProductTranslation;
   digital?: { ar: string; en: string };
   imageCaption?: { ar: string; en: string };
-  pricingPolicy?: "discounted-reference" | "verified-reference" | "marketplace-reference";
   source: {
     name: string;
     url: string;
     price: number;
-    currency: "OMR" | "USD";
+    currency: "OMR";
     retrievedAt: string;
     imageUrl: string;
-    referenceOMR?: number;
-    fxRate?: number;
-    fxPair?: "USD/OMR";
-    listingId?: string;
-    seller?: string;
-    sellerRating?: string;
-    sellerOrders?: string;
-    validUntil?: string;
   };
 }
 export const products: Product[] = [
@@ -93,7 +66,7 @@ export const products: Product[] = [
     "oldPrice": 557.013,
     "wholesalePrice": 462.321,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRXlFVTNWQ2NHZnVQZ1ZHVERRSkREclQ5NVJ4OStiQklybHZqYkJwOUI0UWdxbzNTY3U5ODZDSkhYT1hNS1JHaWNmOVR5UGFsc2xtOXNhVml5ZmhaTkg"
+      "/products/iphone-18-pro-256gb-silver.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -148,7 +121,7 @@ export const products: Product[] = [
     "oldPrice": 650.121,
     "wholesalePrice": 539.6,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCWEQvUEQ2K0RlZDNJelh6T1hiakdBdytYcDJJakhmeWdzWGE3eWZweldlbU01ZlZDa0xRSGNsZGN2cGtrRCtsV0tMSEdWSm02WG9JS0VxaEpJQnZwSFF4aU04bVBaVGpXenUzcE1tZ0JTTWk"
+      "/products/iphone-18-pro-512gb-black.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -203,7 +176,7 @@ export const products: Product[] = [
     "oldPrice": 835.509,
     "wholesalePrice": 693.472,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRXlFVTNWQ2NHZnVQZ1ZHVERRSkREclQ5NVJ4OStiQklybHZqYkJwOUI0UWdxbzNTY3U5ODZDSkhYT1hNS1JHaWNmOVR5UGFsc2xtOXNhVml5ZmhaTkg"
+      "/products/iphone-18-pro-1tb-silver.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -258,7 +231,7 @@ export const products: Product[] = [
     "oldPrice": 1114.441,
     "wholesalePrice": 924.986,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRXlFVTNWQ2NHZnVQZ1ZHVERRSkREclQ5NVJ4OStiQklybHZqYkJwOUI0UWdxbzNTY3U5ODZDSkhYT1hNS1JHaWNmOVR5UGFsc2xtOXNhVml5ZmhaTkg"
+      "/products/iphone-18-pro-2tb-silver.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -313,7 +286,7 @@ export const products: Product[] = [
     "oldPrice": 600.83,
     "wholesalePrice": 498.689,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNmxIMGwrWFVjeE1VUlRMRWVWaXVleHNjcXQ1U2FBY2RzWU80SEN4Z1NYZXA4TndFSGFWdWZMa21CRXlrUm45elpxZTk0czYvTGlFaFJ6MUo4NytKelc"
+      "/products/iphone-18-pro-max-256gb-black.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -368,7 +341,7 @@ export const products: Product[] = [
     "oldPrice": 693.524,
     "wholesalePrice": 575.625,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNmxIMGwrWFVjeE1VUlRMRWVWaXVleHNjcXQ1U2FBY2RzWU80SEN4Z1NYZXA4TndFSGFWdWZMa21CRXlrUm45elpxZTk0czYvTGlFaFJ6MUo4NytKelc"
+      "/products/iphone-18-pro-max-512gb-black.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -423,7 +396,7 @@ export const products: Product[] = [
     "oldPrice": 879.326,
     "wholesalePrice": 729.841,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNWtvNWRUSnBraGdtbVpoaEhCcStEZ1JIMnJUYkhxeFlQUFF6U1JnK1dZZmROL1VCcUxMZGhIeWpHS1Y3Y0ZmQnB1TDcrSFk1dTh4UW5LRWFTUk84MUg"
+      "/products/iphone-18-pro-max-1tb-silver.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -478,7 +451,7 @@ export const products: Product[] = [
     "oldPrice": 1157.833,
     "wholesalePrice": 961.001,
     "images": [
-      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNWtvNWRUSnBraGdtbVpoaEhCcStEZ1JIMnJUYkhxeFlQUFF6U1JnK1dZZmROL1VCcUxMZGhIeWpHS1Y3Y0ZmQnB1TDcrSFk1dTh4UW5LRWFTUk84MUg"
+      "/products/iphone-18-pro-max-2tb-silver.webp"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -532,7 +505,7 @@ export const products: Product[] = [
     "price": 422.1,
     "oldPrice": 469,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/iphone_17_pro_silver_1"
+      "/products/iphone-17-pro-256-silver.webp"
     ],
     "shortDescription": "أداء A19 Pro وكاميرات ثلاثية لتفاصيل تستحق الاحتفاظ بها.",
     "description": "أداء A19 Pro وكاميرات ثلاثية لتفاصيل تستحق الاحتفاظ بها. الشاشة: 6.3 بوصة · المعالج: A19 Pro · التخزين: 256GB.",
@@ -587,7 +560,7 @@ export const products: Product[] = [
     "price": 55.35,
     "oldPrice": 61.5,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400908931_1"
+      "/products/galaxy-a16-4g-grey.webp"
     ],
     "shortDescription": "شاشة واسعة وبطارية كبيرة، لاستخدامك اليومي بسهولة.",
     "description": "شاشة واسعة وبطارية كبيرة، لاستخدامك اليومي بسهولة. الشاشة: 6.7 بوصة Super AMOLED · التخزين: 128GB · الذاكرة: 6GB.",
@@ -642,7 +615,7 @@ export const products: Product[] = [
     "price": 63,
     "oldPrice": 70,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400905569_1"
+      "/products/galaxy-a16-5g-black.webp"
     ],
     "shortDescription": "اتصال 5G وشاشة AMOLED لتبقى قريبًا من كل ما يهمك.",
     "description": "اتصال 5G وشاشة AMOLED لتبقى قريبًا من كل ما يهمك. الشاشة: 6.7 بوصة Super AMOLED · التخزين: 128GB · الذاكرة: 4GB.",
@@ -697,7 +670,7 @@ export const products: Product[] = [
     "price": 40.41,
     "oldPrice": 44.9,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400884981_1"
+      "/products/watch-fit-3-black.webp"
     ],
     "shortDescription": "ساعة خفيفة بشاشة واضحة وتتبّع للتمارين اليومية.",
     "description": "ساعة خفيفة بشاشة واضحة وتتبّع للتمارين اليومية. الشاشة: 1.82 بوصة AMOLED · الدقة: 480 × 408 · الاتصال: Bluetooth 5.2.",
@@ -752,7 +725,7 @@ export const products: Product[] = [
     "price": 54.81,
     "oldPrice": 60.9,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400884985_1"
+      "/products/watch-fit-3-grey.webp"
     ],
     "shortDescription": "تصميم رفيع وتاج دوّار للوصول السريع إلى وظائف الساعة.",
     "description": "تصميم رفيع وتاج دوّار للوصول السريع إلى وظائف الساعة. الشاشة: AMOLED · الدقة: 480 × 408 · الاتصال: Bluetooth 5.2.",
@@ -807,7 +780,7 @@ export const products: Product[] = [
     "price": 48.825,
     "oldPrice": 54.25,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400900642_1"
+      "/products/airpods-4.webp"
     ],
     "shortDescription": "صوت مكاني ومكالمات أوضح في تصميم مريح وخفيف.",
     "description": "صوت مكاني ومكالمات أوضح في تصميم مريح وخفيف. الشريحة: H2 · الصوت: صوت مكاني مخصص · المكالمات: Voice Isolation.",
@@ -862,7 +835,7 @@ export const products: Product[] = [
     "price": 25.421,
     "oldPrice": 28.245,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S500917893_1"
+      "/products/jbl-wave-buds-2-white.webp"
     ],
     "shortDescription": "اختر ما تسمعه مع إلغاء الضوضاء والصوت القوي من JBL.",
     "description": "اختر ما تسمعه مع إلغاء الضوضاء والصوت القوي من JBL. إلغاء الضوضاء: ANC مع Smart Ambient · الاتصال: Bluetooth 5.3 · المشغّلات: 8mm.",
@@ -917,7 +890,7 @@ export const products: Product[] = [
     "price": 16.916,
     "oldPrice": 18.795,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400887603_2"
+      "/products/jbl-go-4-black.webp"
     ],
     "shortDescription": "صوت محمول بحجم صغير، للبيت ولخارج البيت.",
     "description": "صوت محمول بحجم صغير، للبيت ولخارج البيت. الاتصال: Bluetooth · مقاومة الماء والغبار: IP67 · التشغيل: حتى 7 ساعات بحسب الاستخدام.",
@@ -972,7 +945,7 @@ export const products: Product[] = [
     "price": 17.91,
     "oldPrice": 19.9,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S600962139_1"
+      "/products/anker-nano-power-10k.webp"
     ],
     "shortDescription": "طاقة معك في كل مكان وكابل مدمج يجعل الشحن أسهل.",
     "description": "طاقة معك في كل مكان وكابل مدمج يجعل الشحن أسهل. السعة: 10000mAh · الخرج: حتى 45W عبر USB-C · الدخل: حتى 30W.",
@@ -1027,7 +1000,7 @@ export const products: Product[] = [
     "price": 8.01,
     "oldPrice": 8.9,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S500941144_1"
+      "/products/anker-nano-45w.webp"
     ],
     "shortDescription": "شاحن صغير بقدرة 45W لأجهزة USB-C المتوافقة.",
     "description": "شاحن صغير بقدرة 45W لأجهزة USB-C المتوافقة. القدرة: 45W · المنفذ: USB-C · تقنية الشحن: Power Delivery / GaN.",
@@ -1082,7 +1055,7 @@ export const products: Product[] = [
     "price": 4.41,
     "oldPrice": 4.9,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S600965987_1"
+      "/products/anker-zolo-18m.webp"
     ],
     "shortDescription": "كابل مضفّر للشحن ونقل البيانات، بطول مريح.",
     "description": "كابل مضفّر للشحن ونقل البيانات، بطول مريح. الطول: 1.8 متر · المنافذ: USB-C إلى USB-C · القدرة: حتى 240W مع الأجهزة المتوافقة.",
@@ -1137,7 +1110,7 @@ export const products: Product[] = [
     "price": 10.8,
     "oldPrice": 12,
     "images": [
-      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S500947313_1"
+      "/products/smartix-iphone-air-black.webp"
     ],
     "shortDescription": "ملمس ناعم وحواف مرتفعة لحماية الكاميرا اليومية.",
     "description": "ملمس ناعم وحواف مرتفعة لحماية الكاميرا اليومية. التوافق: iPhone Air فقط · الخامة: سيليكون · الشحن المغناطيسي: متوافق مع MagSafe.",
@@ -1193,7 +1166,7 @@ export const products: Product[] = [
     "oldPrice": 265.9,
     "wholesalePrice": 220.697,
     "images": [
-      "https://www.eros.ae/media/catalog/product/cache/0a7dd086897ebf7d858113abe1d65194/s/o/sony_ps5slim_2_.jpg"
+      "/products/ps5-slim-disc.webp"
     ],
     "shortDescription": "جهاز PS5 بتصميم Slim وقارئ أقراص. الحامل العمودي يُباع منفصلًا.",
     "description": "جهاز PS5 بتصميم Slim وقارئ أقراص. الحامل العمودي يُباع منفصلًا.",
@@ -1244,7 +1217,7 @@ export const products: Product[] = [
     "oldPrice": 255,
     "wholesalePrice": 211.65,
     "images": [
-      "https://www.eros.ae/media/catalog/product/cache/0a7dd086897ebf7d858113abe1d65194/b/9/b95150fbb366b55d91be_1.jpg"
+      "/products/switch-2-mario-kart.webp"
     ],
     "shortDescription": "جهاز نينتندو الهجين مع لعبة Mario Kart World. شاشة 1080p ودعم HDR10.",
     "description": "جهاز نينتندو الهجين مع لعبة Mario Kart World. شاشة 1080p ودعم HDR10.",
@@ -1665,956 +1638,5 @@ export const products: Product[] = [
       "ar": "للنسخة العالمية من PUBG Mobile. يؤكد الفريق التوافق وتسليم الكود عبر Midasbuy؛ لا ترسل كلمة المرور أو رمز التحقق.",
       "en": "For the global version of PUBG Mobile. Our team confirms compatibility and Midasbuy redemption. Never send your password or verification code."
     }
-  },
-  {
-    "id": "fortnite-account-01-ikonik-galaxy-glow",
-    "slug": "fortnite-account-01-ikonik-galaxy-glow",
-    "name": "حساب Fortnite Premium — IKONIK + Galaxy + Glow",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 110.937,
-    "wholesalePrice": 110.937,
-    "images": [
-      "/products/fortnite-account-01-ikonik-galaxy-glow.svg"
-    ],
-    "shortDescription": "حساب Fortnite مميز يضم 155 سكن مع IKONIK وGalaxy وGlow وThe Reaper. عرض مصدر خارجي موثّق وقت المراجعة، والتوفر والسعر النهائي يؤكدان قبل الدفع.",
-    "description": "حساب Fortnite مميز يضم 155 سكن مع IKONIK وGalaxy وGlow وThe Reaper. عرض مصدر خارجي موثّق وقت المراجعة، والتوفر والسعر النهائي يؤكدان قبل الدفع. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "155 Skins",
-          "IKONIK",
-          "Galaxy",
-          "Glow",
-          "The Reaper",
-          "Astro Jack",
-          "Omega",
-          "Take The L"
-    ],
-    "specifications": {
-      "Listing ID": "295426627",
-      "السكنات": "155",
-      "الوصول والمنصات": "Full access • PC / PSN / Xbox / Nintendo",
-      "البائع في المصدر": "Tsuki",
-      "تقييم البائع": "4.9/5",
-      "سعر المصدر": "$288.99 USD",
-      "السعر المرجعي المحوّل": "110.937 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Premium Account — IKONIK + Galaxy + Glow",
-      "shortDescription": "Premium Fortnite account with 155 skins including IKONIK, Galaxy, Glow and The Reaper. External marketplace listing verified at review time; availability and final price must be confirmed before payment.",
-      "description": "Premium Fortnite account with 155 skins including IKONIK, Galaxy, Glow and The Reaper. External marketplace listing verified at review time; availability and final price must be confirmed before payment. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "155 Skins",
-            "IKONIK",
-            "Galaxy",
-            "Glow",
-            "The Reaper",
-            "Astro Jack",
-            "Omega",
-            "Take The L"
-      ],
-      "specifications": {
-        "Listing ID": "295426627",
-        "Skins": "155",
-        "Access / platforms": "Full access • PC / PSN / Xbox / Nintendo",
-        "Source seller": "Tsuki",
-        "Seller rating": "4.9/5",
-        "Source price": "$288.99 USD",
-        "Converted reference": "110.937 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/295426627a%21pcpsnxbox-155-skins-fa--stw--ikonik--galaxy--reape/",
-      "price": 288.99,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 110.937,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "295426627",
-      "seller": "Tsuki",
-      "sellerRating": "4.9",
-      "sellerOrders": "3,061"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-02-reaper-glow-minty",
-    "slug": "fortnite-account-02-reaper-glow-minty",
-    "name": "حساب Fortnite Premium — The Reaper + Glow + Minty",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 114.779,
-    "wholesalePrice": 114.779,
-    "images": [
-      "/products/fortnite-account-02-reaper-glow-minty.svg"
-    ],
-    "shortDescription": "حساب Fortnite مميز: 260 سكن، 188 Emotes، 206 Pickaxes و168 Gliders، مع 5,500 V-Bucks وOG STW.",
-    "description": "حساب Fortnite مميز: 260 سكن، 188 Emotes، 206 Pickaxes و168 Gliders، مع 5,500 V-Bucks وOG STW. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "260 Skins",
-          "188 Emotes",
-          "206 Pickaxes",
-          "168 Gliders",
-          "5,500 V-Bucks",
-          "The Reaper",
-          "Glow",
-          "Merry Mint Axe"
-    ],
-    "specifications": {
-      "Listing ID": "296075294",
-      "السكنات": "260",
-      "الوصول والمنصات": "All Platforms • OG STW • Full email access",
-      "البائع في المصدر": "pinkstock",
-      "تقييم البائع": "5.0/5",
-      "سعر المصدر": "$299.00 USD",
-      "السعر المرجعي المحوّل": "114.779 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Premium Account — The Reaper + Glow + Minty",
-      "shortDescription": "Premium Fortnite account: 260 skins, 188 emotes, 206 pickaxes and 168 gliders, with 5,500 V-Bucks and OG STW.",
-      "description": "Premium Fortnite account: 260 skins, 188 emotes, 206 pickaxes and 168 gliders, with 5,500 V-Bucks and OG STW. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "260 Skins",
-            "188 Emotes",
-            "206 Pickaxes",
-            "168 Gliders",
-            "5,500 V-Bucks",
-            "The Reaper",
-            "Glow",
-            "Merry Mint Axe"
-      ],
-      "specifications": {
-        "Listing ID": "296075294",
-        "Skins": "260",
-        "Access / platforms": "All Platforms • OG STW • Full email access",
-        "Source seller": "pinkstock",
-        "Seller rating": "5.0/5",
-        "Source price": "$299.00 USD",
-        "Converted reference": "114.779 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/296075294a%21all-platforms-260-skins--5500-vb--og-stw--the-reap/",
-      "price": 299,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 114.779,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "296075294",
-      "seller": "pinkstock",
-      "sellerRating": "5.0",
-      "sellerOrders": "222"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-03-arcane-jinx-chun-li",
-    "slug": "fortnite-account-03-arcane-jinx-chun-li",
-    "name": "حساب Fortnite Premium — Arcane Jinx + Chun-Li",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 119.002,
-    "wholesalePrice": 119.002,
-    "images": [
-      "/products/fortnite-account-03-arcane-jinx-chun-li.svg"
-    ],
-    "shortDescription": "حساب Fortnite Collector يضم 411 سكن، 236 Emotes، 352 Pickaxes و204 Gliders مع Arcane Jinx وChun-Li وSkull Trooper.",
-    "description": "حساب Fortnite Collector يضم 411 سكن، 236 Emotes، 352 Pickaxes و204 Gliders مع Arcane Jinx وChun-Li وSkull Trooper. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "411 Skins",
-          "236 Emotes",
-          "352 Pickaxes",
-          "204 Gliders",
-          "Arcane Jinx",
-          "Chun-Li",
-          "Skull Trooper",
-          "John Wick"
-    ],
-    "specifications": {
-      "Listing ID": "296068643",
-      "السكنات": "411",
-      "الوصول والمنصات": "All Platforms • OG STW • Email changeable",
-      "البائع في المصدر": "pinkstock",
-      "تقييم البائع": "5.0/5",
-      "سعر المصدر": "$310.00 USD",
-      "السعر المرجعي المحوّل": "119.002 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Premium Account — Arcane Jinx + Chun-Li",
-      "shortDescription": "Fortnite collector account with 411 skins, 236 emotes, 352 pickaxes and 204 gliders, featuring Arcane Jinx, Chun-Li and Skull Trooper.",
-      "description": "Fortnite collector account with 411 skins, 236 emotes, 352 pickaxes and 204 gliders, featuring Arcane Jinx, Chun-Li and Skull Trooper. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "411 Skins",
-            "236 Emotes",
-            "352 Pickaxes",
-            "204 Gliders",
-            "Arcane Jinx",
-            "Chun-Li",
-            "Skull Trooper",
-            "John Wick"
-      ],
-      "specifications": {
-        "Listing ID": "296068643",
-        "Skins": "411",
-        "Access / platforms": "All Platforms • OG STW • Email changeable",
-        "Source seller": "pinkstock",
-        "Seller rating": "5.0/5",
-        "Source price": "$310.00 USD",
-        "Converted reference": "119.002 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/296068643a%21all-platforms-411-skins--og-stw--arcane-jinx-skull/",
-      "price": 310,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 119.002,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "296068643",
-      "seller": "pinkstock",
-      "sellerRating": "5.0",
-      "sellerOrders": "222"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-04-black-knight-travis-scott",
-    "slug": "fortnite-account-04-black-knight-travis-scott",
-    "name": "حساب Fortnite OG — Black Knight + Travis Scott",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 143.954,
-    "wholesalePrice": 143.954,
-    "images": [
-      "/products/fortnite-account-04-black-knight-travis-scott.svg"
-    ],
-    "shortDescription": "حساب Fortnite OG يضم 154 سكن، 162 Emotes، 158 Pickaxes و132 Gliders مع Black Knight وTravis Scott وThe Reaper.",
-    "description": "حساب Fortnite OG يضم 154 سكن، 162 Emotes، 158 Pickaxes و132 Gliders مع Black Knight وTravis Scott وThe Reaper. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "154 Skins",
-          "162 Emotes",
-          "158 Pickaxes",
-          "132 Gliders",
-          "Black Knight",
-          "Travis Scott",
-          "Sparkle Specialist",
-          "The Reaper"
-    ],
-    "specifications": {
-      "Listing ID": "297072705",
-      "السكنات": "154",
-      "الوصول والمنصات": "All Platforms • OG STW • 50 V-Bucks",
-      "البائع في المصدر": "pinkstock",
-      "تقييم البائع": "5.0/5",
-      "سعر المصدر": "$375.00 USD",
-      "السعر المرجعي المحوّل": "143.954 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite OG Account — Black Knight + Travis Scott",
-      "shortDescription": "Fortnite OG account with 154 skins, 162 emotes, 158 pickaxes and 132 gliders, including Black Knight, Travis Scott and The Reaper.",
-      "description": "Fortnite OG account with 154 skins, 162 emotes, 158 pickaxes and 132 gliders, including Black Knight, Travis Scott and The Reaper. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "154 Skins",
-            "162 Emotes",
-            "158 Pickaxes",
-            "132 Gliders",
-            "Black Knight",
-            "Travis Scott",
-            "Sparkle Specialist",
-            "The Reaper"
-      ],
-      "specifications": {
-        "Listing ID": "297072705",
-        "Skins": "154",
-        "Access / platforms": "All Platforms • OG STW • 50 V-Bucks",
-        "Source seller": "pinkstock",
-        "Seller rating": "5.0/5",
-        "Source price": "$375.00 USD",
-        "Converted reference": "143.954 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/297072705a%21all-platforms-154-skins--og-stw--black-knightspark/",
-      "price": 375,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 143.954,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "297072705",
-      "seller": "pinkstock",
-      "sellerRating": "5.0",
-      "sellerOrders": "222"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-05-584-skins-collector",
-    "slug": "fortnite-account-05-584-skins-collector",
-    "name": "حساب Fortnite Collector — 584 Skins",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 147.793,
-    "wholesalePrice": 147.793,
-    "images": [
-      "/products/fortnite-account-05-584-skins-collector.svg"
-    ],
-    "shortDescription": "حساب Fortnite Collector ضخم يضم 584 سكن، 399 Emotes، 536 Pickaxes و361 Gliders، مع Merry Mint Axe وLeviathan Axe.",
-    "description": "حساب Fortnite Collector ضخم يضم 584 سكن، 399 Emotes، 536 Pickaxes و361 Gliders، مع Merry Mint Axe وLeviathan Axe. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "584 Skins",
-          "399 Emotes",
-          "536 Pickaxes",
-          "361 Gliders",
-          "Merry Mint Axe",
-          "Leviathan Axe",
-          "Omega Stage 5",
-          "Gold Midas"
-    ],
-    "specifications": {
-      "Listing ID": "296921781",
-      "السكنات": "584",
-      "الوصول والمنصات": "PC / PSN • OG STW • 100 V-Bucks",
-      "البائع في المصدر": "pinkstock",
-      "تقييم البائع": "5.0/5",
-      "سعر المصدر": "$385.00 USD",
-      "السعر المرجعي المحوّل": "147.793 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Collector Account — 584 Skins",
-      "shortDescription": "Large Fortnite collector account with 584 skins, 399 emotes, 536 pickaxes and 361 gliders, including Merry Mint Axe and Leviathan Axe.",
-      "description": "Large Fortnite collector account with 584 skins, 399 emotes, 536 pickaxes and 361 gliders, including Merry Mint Axe and Leviathan Axe. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "584 Skins",
-            "399 Emotes",
-            "536 Pickaxes",
-            "361 Gliders",
-            "Merry Mint Axe",
-            "Leviathan Axe",
-            "Omega Stage 5",
-            "Gold Midas"
-      ],
-      "specifications": {
-        "Listing ID": "296921781",
-        "Skins": "584",
-        "Access / platforms": "PC / PSN • OG STW • 100 V-Bucks",
-        "Source seller": "pinkstock",
-        "Seller rating": "5.0/5",
-        "Source price": "$385.00 USD",
-        "Converted reference": "147.793 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/296921781a%21pcpsn-584-skins--og-stw--merry-mint-axe-leviathan-/",
-      "price": 385,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 147.793,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "296921781",
-      "seller": "pinkstock",
-      "sellerRating": "5.0",
-      "sellerOrders": "222"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-06-black-knight-ikonik",
-    "slug": "fortnite-account-06-black-knight-ikonik",
-    "name": "حساب Fortnite Premium — Black Knight + IKONIK",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 148.557,
-    "wholesalePrice": 148.557,
-    "images": [
-      "/products/fortnite-account-06-black-knight-ikonik.svg"
-    ],
-    "shortDescription": "حساب Fortnite Premium يضم 286 سكن مع Black Knight وIKONIK وGlow وThe Reaper وFloss.",
-    "description": "حساب Fortnite Premium يضم 286 سكن مع Black Knight وIKONIK وGlow وThe Reaper وFloss. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "286 Skins",
-          "Black Knight",
-          "IKONIK",
-          "Glow",
-          "The Reaper",
-          "Neo Versa",
-          "Power Chord",
-          "Floss"
-    ],
-    "specifications": {
-      "Listing ID": "295815839",
-      "السكنات": "286",
-      "الوصول والمنصات": "Full access • PC / PSN / Xbox / Nintendo",
-      "البائع في المصدر": "Tsuki",
-      "تقييم البائع": "4.9/5",
-      "سعر المصدر": "$386.99 USD",
-      "السعر المرجعي المحوّل": "148.557 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Premium Account — Black Knight + IKONIK",
-      "shortDescription": "Premium Fortnite account with 286 skins including Black Knight, IKONIK, Glow, The Reaper and Floss.",
-      "description": "Premium Fortnite account with 286 skins including Black Knight, IKONIK, Glow, The Reaper and Floss. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "286 Skins",
-            "Black Knight",
-            "IKONIK",
-            "Glow",
-            "The Reaper",
-            "Neo Versa",
-            "Power Chord",
-            "Floss"
-      ],
-      "specifications": {
-        "Listing ID": "295815839",
-        "Skins": "286",
-        "Access / platforms": "Full access • PC / PSN / Xbox / Nintendo",
-        "Source seller": "Tsuki",
-        "Seller rating": "4.9/5",
-        "Source price": "$386.99 USD",
-        "Converted reference": "148.557 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/295815839a%21pcpsnxbox-286-skins-fa--stw--black-knight--ikonik-/",
-      "price": 386.99,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 148.557,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "295815839",
-      "seller": "Tsuki",
-      "sellerRating": "4.9",
-      "sellerOrders": "3,064"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-07-chapter-1-bp-3-10",
-    "slug": "fortnite-account-07-chapter-1-bp-3-10",
-    "name": "حساب Fortnite Chapter 1 — Battle Pass 3–10",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 149.697,
-    "wholesalePrice": 149.697,
-    "images": [
-      "/products/fortnite-account-07-chapter-1-bp-3-10.svg"
-    ],
-    "shortDescription": "حساب Fortnite Chapter 1 مع Battle Pass المواسم 3–10 وSTW Founder وOriginal Email و850 V-Bucks. عدد السكنات الإجمالي غير مذكور في المصدر.",
-    "description": "حساب Fortnite Chapter 1 مع Battle Pass المواسم 3–10 وSTW Founder وOriginal Email و850 V-Bucks. عدد السكنات الإجمالي غير مذكور في المصدر. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "Battle Pass 3–10",
-          "STW Founder",
-          "Original Email",
-          "850 V-Bucks",
-          "Orange Justice",
-          "Geralt of Rivia",
-          "Solid Snake",
-          "Darth Vader"
-    ],
-    "specifications": {
-      "Listing ID": "295941852",
-      "السكنات": "غير مذكور في المصدر",
-      "الوصول والمنصات": "Full Access • Original Email • Manual delivery ≤24h",
-      "البائع في المصدر": "LucyLesta",
-      "تقييم البائع": "5.0/5",
-      "سعر المصدر": "$389.96 USD",
-      "السعر المرجعي المحوّل": "149.697 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Chapter 1 Account — Battle Pass 3–10",
-      "shortDescription": "Fortnite Chapter 1 account with Battle Pass seasons 3–10, STW Founder, original email and 850 V-Bucks. Total skin count is not stated by the source.",
-      "description": "Fortnite Chapter 1 account with Battle Pass seasons 3–10, STW Founder, original email and 850 V-Bucks. Total skin count is not stated by the source. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "Battle Pass 3–10",
-            "STW Founder",
-            "Original Email",
-            "850 V-Bucks",
-            "Orange Justice",
-            "Geralt of Rivia",
-            "Solid Snake",
-            "Darth Vader"
-      ],
-      "specifications": {
-        "Listing ID": "295941852",
-        "Skins": "Not stated by source",
-        "Access / platforms": "Full Access • Original Email • Manual delivery ≤24h",
-        "Source seller": "LucyLesta",
-        "Seller rating": "5.0/5",
-        "Source price": "$389.96 USD",
-        "Converted reference": "149.697 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/295941852a%21stw-founder--850-vbucks--battle-pass-3-to-10--chap/",
-      "price": 389.96,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 149.697,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "295941852",
-      "seller": "LucyLesta",
-      "sellerRating": "5.0",
-      "sellerOrders": "889"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-08-ikonik-omega-glow",
-    "slug": "fortnite-account-08-ikonik-omega-glow",
-    "name": "حساب Fortnite Premium — IKONIK + Omega + Glow",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 153.167,
-    "wholesalePrice": 153.167,
-    "images": [
-      "/products/fortnite-account-08-ikonik-omega-glow.svg"
-    ],
-    "shortDescription": "حساب Fortnite Premium يضم 282 سكن مع IKONIK وOmega وGlow وThe Reaper و5,900 V-Bucks.",
-    "description": "حساب Fortnite Premium يضم 282 سكن مع IKONIK وOmega وGlow وThe Reaper و5,900 V-Bucks. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "282 Skins",
-          "IKONIK",
-          "Omega",
-          "Glow",
-          "The Reaper",
-          "Freestylin'",
-          "Elite Agent",
-          "5,900 V-Bucks"
-    ],
-    "specifications": {
-      "Listing ID": "296662950",
-      "السكنات": "282",
-      "الوصول والمنصات": "Full access • PC / PSN / Xbox / Switch / Mobile",
-      "البائع في المصدر": "Man4ik",
-      "تقييم البائع": "4.9/5",
-      "سعر المصدر": "$399.00 USD",
-      "السعر المرجعي المحوّل": "153.167 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite Premium Account — IKONIK + Omega + Glow",
-      "shortDescription": "Premium Fortnite account with 282 skins including IKONIK, Omega, Glow, The Reaper and 5,900 V-Bucks.",
-      "description": "Premium Fortnite account with 282 skins including IKONIK, Omega, Glow, The Reaper and 5,900 V-Bucks. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "282 Skins",
-            "IKONIK",
-            "Omega",
-            "Glow",
-            "The Reaper",
-            "Freestylin'",
-            "Elite Agent",
-            "5,900 V-Bucks"
-      ],
-      "specifications": {
-        "Listing ID": "296662950",
-        "Skins": "282",
-        "Access / platforms": "Full access • PC / PSN / Xbox / Switch / Mobile",
-        "Source seller": "Man4ik",
-        "Seller rating": "4.9/5",
-        "Source price": "$399.00 USD",
-        "Converted reference": "153.167 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/296662950a%21psnpcxboxnin282-skinsikonikomegafreestylin/",
-      "price": 399,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 153.167,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "296662950",
-      "seller": "Man4ik",
-      "sellerRating": "4.9",
-      "sellerOrders": "13,648"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-09-black-knight-travis-scott-premium",
-    "slug": "fortnite-account-09-black-knight-travis-scott-premium",
-    "name": "حساب Fortnite OG Premium — Black Knight + Travis Scott",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 191.939,
-    "wholesalePrice": 191.939,
-    "images": [
-      "/products/fortnite-account-09-black-knight-travis-scott-premium.svg"
-    ],
-    "shortDescription": "حساب Fortnite OG يضم 148 سكن مع Black Knight وTravis Scott وThe Reaper وTake The L وFloss.",
-    "description": "حساب Fortnite OG يضم 148 سكن مع Black Knight وTravis Scott وThe Reaper وTake The L وFloss. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "148 Skins",
-          "Black Knight",
-          "Travis Scott",
-          "The Reaper",
-          "Take The L",
-          "Floss",
-          "FNCS Renegade",
-          "Omega Stage 5"
-    ],
-    "specifications": {
-      "Listing ID": "295972935",
-      "السكنات": "148",
-      "الوصول والمنصات": "Full access • PC / Xbox / PSN / Switch • Instant",
-      "البائع في المصدر": "SWIFTYYMARTZZ",
-      "تقييم البائع": "5.0/5",
-      "سعر المصدر": "$500.00 USD",
-      "السعر المرجعي المحوّل": "191.939 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite OG Premium Account — Black Knight + Travis Scott",
-      "shortDescription": "Fortnite OG account with 148 skins including Black Knight, Travis Scott, The Reaper, Take The L and Floss.",
-      "description": "Fortnite OG account with 148 skins including Black Knight, Travis Scott, The Reaper, Take The L and Floss. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "148 Skins",
-            "Black Knight",
-            "Travis Scott",
-            "The Reaper",
-            "Take The L",
-            "Floss",
-            "FNCS Renegade",
-            "Omega Stage 5"
-      ],
-      "specifications": {
-        "Listing ID": "295972935",
-        "Skins": "148",
-        "Access / platforms": "Full access • PC / Xbox / PSN / Switch • Instant",
-        "Source seller": "SWIFTYYMARTZZ",
-        "Seller rating": "5.0/5",
-        "Source price": "$500.00 USD",
-        "Converted reference": "191.939 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/295972935a%21148-skinsog-stwblack-knighttravis-scottthe-reapert/",
-      "price": 500,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 191.939,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "295972935",
-      "seller": "SWIFTYYMARTZZ",
-      "sellerRating": "5.0",
-      "sellerOrders": "141"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    "id": "fortnite-account-10-og-purple-skull-trooper",
-    "slug": "fortnite-account-10-og-purple-skull-trooper",
-    "name": "حساب Fortnite OG — Purple Skull Trooper",
-    "brand": "Fortnite",
-    "category": "ألعاب الفيديو",
-    "price": 364.679,
-    "wholesalePrice": 364.679,
-    "images": [
-      "/products/fortnite-account-10-og-purple-skull-trooper.svg"
-    ],
-    "shortDescription": "حساب Fortnite OG نادر يضم 129 سكن مع OG Purple Skull Trooper وThe Reaper وBlue Squire وRoyale Knight وOG STW.",
-    "description": "حساب Fortnite OG نادر يضم 129 سكن مع OG Purple Skull Trooper وThe Reaper وBlue Squire وRoyale Knight وOG STW. السعر المعروض مرجع تقريبي محوّل من سعر المصدر بالدولار إلى الريال العُماني وقت المراجعة، وقد يتغير العرض أو السعر أو التوفر لدى البائع الخارجي. يتم تأكيد بيانات الحساب ونقل الوصول والسعر النهائي عبر MR ROBOT قبل أي التزام بالدفع.",
-    "features": [
-          "129 Skins",
-          "OG Purple Skull Trooper",
-          "The Reaper",
-          "Blue Squire",
-          "Royale Knight",
-          "Elite Agent",
-          "Rogue Agent",
-          "OG STW"
-    ],
-    "specifications": {
-      "Listing ID": "296770080",
-      "السكنات": "129",
-      "الوصول والمنصات": "Full access • PC / PS4 / PS5 / Switch / Mobile",
-      "البائع في المصدر": "UnrankedSmurfs",
-      "تقييم البائع": "4.9/5",
-      "سعر المصدر": "$949.99 USD",
-      "السعر المرجعي المحوّل": "364.679 OMR"
-    },
-    "badge": "Fortnite Premium",
-    "featured": false,
-    "availability": "unconfirmed",
-    "pricingPolicy": "marketplace-reference",
-    "en": {
-      "name": "Fortnite OG Account — Purple Skull Trooper",
-      "shortDescription": "Rare Fortnite OG account with 129 skins including OG Purple Skull Trooper, The Reaper, Blue Squire, Royale Knight and OG STW.",
-      "description": "Rare Fortnite OG account with 129 skins including OG Purple Skull Trooper, The Reaper, Blue Squire, Royale Knight and OG STW. The displayed amount is an approximate OMR reference converted from the external USD listing at review time. Listing price and availability may change. MR ROBOT confirms account details, transfer conditions and final price before any payment commitment.",
-      "features": [
-            "129 Skins",
-            "OG Purple Skull Trooper",
-            "The Reaper",
-            "Blue Squire",
-            "Royale Knight",
-            "Elite Agent",
-            "Rogue Agent",
-            "OG STW"
-      ],
-      "specifications": {
-        "Listing ID": "296770080",
-        "Skins": "129",
-        "Access / platforms": "Full access • PC / PS4 / PS5 / Switch / Mobile",
-        "Source seller": "UnrankedSmurfs",
-        "Seller rating": "4.9/5",
-        "Source price": "$949.99 USD",
-        "Converted reference": "364.679 OMR"
-      }
-    },
-    "source": {
-      "name": "PlayerAuctions",
-      "url": "https://www.playerauctions.com/fortnite-account/296770080a%21312--instant-delivery--129-skins--og-stw--purple-o/",
-      "price": 949.99,
-      "currency": "USD",
-      "retrievedAt": "2026-10-03",
-      "imageUrl": "",
-      "referenceOMR": 364.679,
-      "fxRate": 0.383877,
-      "fxPair": "USD/OMR",
-      "listingId": "296770080",
-      "seller": "UnrankedSmurfs",
-      "sellerRating": "4.9",
-      "sellerOrders": "3,740"
-    },
-    "digital": {
-      "ar": "حساب رقمي من عرض بائع خارجي مستقل. التوفر وبيانات النقل والسعر النهائي تؤكد قبل الدفع. لا ترسل كلمات المرور أو رموز التحقق في محادثات عامة.",
-      "en": "Digital account from an independent external seller listing. Availability, transfer details and final price are confirmed before payment. Never send passwords or verification codes in public chats."
-    },
-    "imageCaption": {
-      "ar": "تصميم MR ROBOT مبني على بيانات العرض الموثقة؛ ليس نسخة من صور البائع الأصلية.",
-      "en": "MR ROBOT artwork based on verified listing facts; it does not reproduce the seller's original images."
-    }
-  },
-  {
-    id: "sony-a7-iv-body-bq",
-    slug: "sony-a7-iv-body-bq",
-    name: "كاميرا Sony a7 IV — هيكل فقط ILCE-7M4/BQ",
-    brand: "Sony",
-    category: "الكاميرات",
-    price: 620.91,
-    wholesalePrice: 572.617,
-    images: ["/products/sony-a7-iv-body-bq.svg"],
-    shortDescription: "كاميرا Sony A7 IV كاملة الإطار بدقة 33 ميجابكسل، نسخة ILCE-7M4/BQ للهيكل فقط. توفر MR ROBOT يحتاج تأكيدًا.",
-    description: "كاميرا بعدسات قابلة للتبديل بتركيب Sony E، ومستشعر كامل الإطار بدقة 33 ميجابكسل. هذا العرض للهيكل فقط؛ العدسة في الصورة غير مشمولة. يُرجى تأكيد توفر MR ROBOT والضمان والتوصيل قبل الطلب.",
-    features: ["مستشعر كامل الإطار بدقة 33 ميجابكسل", "تركيب عدسات Sony E", "هيكل فقط — العدسة غير مشمولة"],
-    specifications: { الموديل: "ILCE-7M4/BQ", النسخة: "أسود؛ هيكل فقط؛ دون حزمة عدسات", المستشعر: "كامل الإطار، 33 ميجابكسل", "تركيب العدسة": "Sony E", العدسة: "غير مشمولة" },
-    featured: true,
-    availability: "unconfirmed",
-    pricingPolicy: "verified-reference",
-    en: {
-      name: "Sony a7 IV — body only ILCE-7M4/BQ",
-      shortDescription: "33MP full-frame Sony A7 IV camera, ILCE-7M4/BQ body-only version. MR ROBOT availability needs confirmation.",
-      description: "Interchangeable-lens camera with Sony E mount and a 33MP full-frame sensor. This offer is body only; the lens in the photograph is not included. Confirm MR ROBOT availability, warranty and delivery before ordering.",
-      features: ["33MP full-frame sensor", "Sony E lens mount", "Body only — lens not included"],
-      specifications: { Model: "ILCE-7M4/BQ", Variant: "Black; body only; no lens bundle", Sensor: "Full frame, 33MP", "Lens mount": "Sony E", Lens: "Not included" },
-    },
-    source: {
-      name: "Skyorbits Oman",
-      url: "https://www.skyorbits.tech/shop/4548736133655-sony-a7-iv-mirrorless-camera-body-only-ilce-7m4-bq-1122",
-      price: 689.9,
-      currency: "OMR",
-      retrievedAt: "2026-10-01",
-      imageUrl: "",
-      validUntil: "2026-10-08T17:52:07Z",
-    },
-    imageCaption: {
-      ar: "صورة مرخصة للكاميرا؛ العدسة الظاهرة غير مشمولة: العرض للهيكل فقط.",
-      en: "Licensed camera photograph; pictured lens is not included: body-only offer.",
-    },
-  },
-  {
-    id: "polaroid-go-gen2-white-6282",
-    slug: "polaroid-go-gen2-white-6282",
-    name: "Polaroid Go الجيل الثاني — أبيض مع 16 صورة",
-    brand: "Polaroid",
-    category: "الكاميرات",
-    price: 41.401,
-    wholesalePrice: 38.181,
-    images: ["/products/polaroid-go-gen2-white-6282.svg"],
-    shortDescription: "كاميرا Polaroid Go من الجيل الثاني، بيضاء، موديل 6282 مع فيلم لـ16 صورة. توفر MR ROBOT يحتاج تأكيدًا.",
-    description: "كاميرا فورية صغيرة مع شحن USB-C ومؤقت ذاتي ووضع تعريض مزدوج. هذه النسخة البيضاء 6282 تشمل فيلم Polaroid Go لـ16 صورة. تستخدم فيلم Go فقط؛ فيلم i-Type و600 غير متوافق.",
-    features: ["الجيل الثاني، أبيض، 6282", "فيلم Go لـ16 صورة مرفق", "شحن USB-C ومؤقت ذاتي"],
-    specifications: { الموديل: "6282", النسخة: "أبيض؛ حزمة 16 صورة", الفيلم: "Polaroid Go فقط", الشحن: "USB-C", الحزمة: "فيلم لـ16 صورة" },
-    featured: true,
-    availability: "unconfirmed",
-    pricingPolicy: "verified-reference",
-    en: {
-      name: "Polaroid Go Generation 2 — white with 16 photos",
-      shortDescription: "White Polaroid Go Generation 2 camera, model 6282 with film for 16 photos. MR ROBOT availability needs confirmation.",
-      description: "Compact instant camera with USB-C charging, self-timer and double exposure. This white 6282 bundle includes Polaroid Go film for 16 photos. Uses Go film only; i-Type and 600 film are incompatible.",
-      features: ["Generation 2, white, 6282", "Go film for 16 photos included", "USB-C charging and self-timer"],
-      specifications: { Model: "6282", Variant: "White; 16-photo bundle", Film: "Polaroid Go only", Charging: "USB-C", Bundle: "Film for 16 photos" },
-    },
-    source: {
-      name: "Skyorbits Oman",
-      url: "https://www.skyorbits.tech/shop/pol-6282-polaroid-go-generation-2-instant-camera-with-16-photos-white-6282-5587",
-      price: 46.001,
-      currency: "OMR",
-      retrievedAt: "2026-10-01",
-      imageUrl: "",
-      validUntil: "2026-10-08T17:52:07Z",
-    },
-    imageCaption: {
-      ar: "صورة مرخصة للكاميرا؛ حزمة 16 صورة مرفقة بالعرض ولا تظهر في الصورة.",
-      en: "Licensed camera photograph; the included 16-photo film bundle is not pictured.",
-    },
-  },
-  {
-    id: "beyerdynamic-dt990-pro-250",
-    slug: "beyerdynamic-dt990-pro-250",
-    name: "سماعة Beyerdynamic DT 990 PRO — 250 أوم",
-    brand: "Beyerdynamic",
-    category: "الصوتيات",
-    price: 66.51,
-    wholesalePrice: 61.337,
-    images: ["/products/beyerdynamic-dt990-pro-250.svg"],
-    shortDescription: "سماعة استوديو سلكية مفتوحة، نسخة PRO بمقاومة 250 أوم وكابل لولبي ثابت. توفر MR ROBOT يحتاج تأكيدًا.",
-    description: "سماعة فوق الأذن بتصميم مفتوح ووسادات مخملية رمادية. النسخة المطلوبة PRO 250 أوم مع كابل لولبي ومقبس 3.5 مم ومحول 6.35 مم؛ ليست نسخة 80 أوم أو Edition أو PRO X، ولا تشمل مضخمًا.",
-    features: ["نسخة PRO، مقاومة 250 أوم", "تصميم مفتوح مع وسادات مخملية", "كابل لولبي ثابت، 3.5 مم مع محول 6.35 مم"],
-    specifications: { الموديل: "DT 990 PRO 250 ohms", التصميم: "مفتوح، فوق الأذن", المقاومة: "250 أوم", الاتصال: "3.5 مم تناظري + محول 6.35 مم" },
-    featured: true,
-    availability: "unconfirmed",
-    pricingPolicy: "verified-reference",
-    en: {
-      name: "Beyerdynamic DT 990 PRO — 250 ohms",
-      shortDescription: "Open-back wired studio headphones, PRO 250-ohm version with fixed coiled cable. MR ROBOT availability needs confirmation.",
-      description: "Open-back over-ear headphones with grey velour pads. Requested version: PRO 250 ohms, coiled cable, 3.5mm plug and 6.35mm adapter; not the 80-ohm, Edition or PRO X version, and no amplifier included.",
-      features: ["PRO version, 250-ohm impedance", "Open-back design with velour pads", "Fixed coiled cable, 3.5mm plug with 6.35mm adapter"],
-      specifications: { Model: "DT 990 PRO 250 ohms", Design: "Open-back, over-ear", Impedance: "250 ohms", Connection: "Analogue 3.5mm plus 6.35mm adapter" },
-    },
-    source: {
-      name: "Gadgets Oman",
-      url: "https://gadgetsoman.com/products/beyerdynamic-dt-990-pro-250-ohms-studio-headphones-for-mixing-and-mastering-high-quality-audio-ideal-for-professional-use",
-      price: 73.9,
-      currency: "OMR",
-      retrievedAt: "2026-10-01",
-      imageUrl: "",
-      validUntil: "2026-10-08T17:56:10Z",
-    },
-    imageCaption: {
-      ar: "صورة مرخصة لنسخة DT 990 PRO بالكابل اللولبي؛ الأجهزة الظاهرة بالخلفية غير مشمولة.",
-      en: "Licensed photograph of DT 990 PRO with coiled cable; background equipment is not included.",
-    },
   }
 ];

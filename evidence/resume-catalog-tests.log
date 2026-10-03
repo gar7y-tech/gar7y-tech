@@ -1,0 +1,16 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+Running 8 tests using 1 worker
+
+(node:359) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/catalog.spec.ts:14:5 › All catalog reference prices yield the exact baisa-rounded independent discounts (72ms)
+  ✓  2 tests/catalog.spec.ts:28:5 › Every product has bilingual factual copy and existing local images (47ms)
+  ✓  3 tests/catalog.spec.ts:40:5 › All WhatsApp product messages agree with the order mode and translated prices (289ms)
+  ✓  4 tests/catalog.spec.ts:60:7 › Model number is not a budget: iPhone 18 أقل من 600 ريال (3ms)
+  ✓  5 tests/catalog.spec.ts:60:7 › Model number is not a budget: iPhone 18 under 600 OMR (4ms)
+  ✓  6 tests/catalog.spec.ts:60:7 › Model number is not a budget: iPhone 18 أقل من ٦٠٠ ريال (3ms)
+  ✓  7 tests/catalog.spec.ts:82:5 › Model-only and storage-only queries do not manufacture a budget (1ms)
+  ✓  8 tests/catalog.spec.ts:88:5 › Real GLB has skinned meshes, sixteen weighted bones and five playable state clips (45ms)
+
+  8 passed (927ms)

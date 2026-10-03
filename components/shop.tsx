@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import {
   createContext,
@@ -51,9 +52,6 @@ import {
   salesMessage,
   wholesaleMessage,
   normalize,
-  isMarketplaceReference,
-  hasVerifiedReference,
-  lineTotal,
   Language,
   PriceMode,
 } from "@/lib/store";
@@ -98,29 +96,18 @@ export function Photo({
 }) {
   const [failed, setFailed] = useState(false);
   const { t } = useShop();
-  const resolved = failed ? "/icon.svg" : src;
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={resolved}
+    <Image
+      src={failed ? "/icon.svg" : src}
       alt={failed ? t("الصورة غير متاحة", "Image unavailable") : alt}
+      fill
       sizes={sizes}
-      loading={priority ? "eager" : "lazy"}
-      fetchPriority={priority ? "high" : "auto"}
-      decoding="async"
+      priority={priority}
       className={className}
       onError={() => setFailed(true)}
-      style={{
-        position: "absolute",
-        inset: 0,
-        width: "100%",
-        height: "100%",
-        objectFit: "contain",
-      }}
     />
   );
 }
-
 export function External({
   href,
   children,
@@ -253,40 +240,26 @@ export function StoreProvider({
             x.id === id ? { ...x, quantity: Math.min(99, q) } : x,
           ),
     );
-  const pricedLines = items.map((x) =>
-      lineTotal(products.find((p) => p.id === x.id)!, x.quantity, mode),
+  const total = items.reduce(
+      (s, x) =>
+        s +
+        amount(
+          products.find((p) => p.id === x.id)!,
+          mode,
+        ) *
+          x.quantity,
+      0,
     ),
-    total = pricedLines.some((value) => value === null)
-      ? null
-      : pricedLines.reduce((sum, value) => sum + (value ?? 0), 0),
-    count = items.reduce((s, x) => s + x.quantity, 0),
-    hasMarketplaceReference = items.some((x) =>
-      isMarketplaceReference(products.find((p) => p.id === x.id)!),
-    ),
-    hasUnverifiedPrice = items.some(
-      (x) => amount(products.find((p) => p.id === x.id)!, mode) === null,
-    );
+    count = items.reduce((s, x) => s + x.quantity, 0);
   const order = whatsapp(
     t(
-      `مرحبًا MR ROBOT 👋\n\nأرغب بطلب المنتجات التالية:\n\n${items.map((x, i) => `${i + 1}. ${products.find((p) => p.id === x.id)!.name} × ${x.quantity} — ${price(lineTotal(products.find((p) => p.id === x.id)!, x.quantity, mode), "ar")}`).join("\n")}\n\nنوع الطلب: ${mode === "wholesale" ? "جملة / توريد" : "تجزئة"}\nالإجمالي: ${price(total, "ar")}\n\nيرجى تأكيد التوفر والسعر النهائي والتوصيل قبل الدفع.`,
-      `Hello MR ROBOT 👋\n\nI would like to order:\n\n${items.map((x, i) => `${i + 1}. ${products.find((p) => p.id === x.id)!.en.name} × ${x.quantity} — ${price(lineTotal(products.find((p) => p.id === x.id)!, x.quantity, mode), "en")}`).join("\n")}\n\nOrder type: ${mode === "wholesale" ? "Wholesale / supply" : "Retail"}\nTotal: ${price(total, "en")}\n\nPlease confirm availability, final price and delivery before payment.`,
+      `مرحبًا MR ROBOT 👋\n\nأرغب بطلب المنتجات التالية:\n\n${items.map((x, i) => `${i + 1}. ${products.find((p) => p.id === x.id)!.name} × ${x.quantity}`).join("\n")}\n\nنوع الطلب:\n${mode === "wholesale" ? "جملة — أنا تاجر / صاحب محل — خصم 17%" : "تجزئة — خصم 10%"}\n\nالإجمالي التقريبي:\n${price(total, "ar")}\n\nيرجى تأكيد التوفر والسعر النهائي والتوصيل.`,
+      `Hello MR ROBOT 👋\n\nI would like to order:\n\n${items.map((x, i) => `${i + 1}. ${products.find((p) => p.id === x.id)!.en.name} × ${x.quantity}`).join("\n")}\n\nOrder type:\n${mode === "wholesale" ? "Wholesale — I am a trader / shop owner — 17% discount" : "Retail — 10% discount"}\n\nEstimated total:\n${price(total, "en")}\n\nPlease confirm availability, final price and delivery.`,
     ) +
       (items.some((x) => products.find((p) => p.id === x.id)?.digital)
         ? t(
-            "\nللمنتجات الرقمية: يرجى تأكيد منطقة الحساب والتوافق وطريقة التسليم الآمن. لا ترسل كلمة المرور أو رمز التحقق.",
-            "\nFor digital products: please confirm account region, compatibility and the secure delivery method. Never send passwords or verification codes.",
-          )
-        : "") +
-      (hasMarketplaceReference
-        ? t(
-            "\nحسابات Fortnite تستخدم سعرًا مرجعيًا من عرض خارجي ولا يطبق عليها خصم التجزئة أو الجملة تلقائيًا؛ يؤكد السعر النهائي قبل الدفع.",
-            "\nFortnite accounts use an external marketplace reference price; retail/trade discounts are not applied automatically and the final price is confirmed before payment.",
-          )
-        : "") +
-      (hasUnverifiedPrice
-        ? t(
-            "\nيوجد منتج واحد أو أكثر بسعر يحتاج مراجعة؛ لن يظهر إجمالي نقدي حتى يؤكد الفريق السعر الحالي.",
-            "\nOne or more items require a price review; a cash total is not shown until the team confirms the current price.",
+            "\nللمنتجات الرقمية: يرجى تأكيد منطقة الحساب والتوافق وطريقة تسليم الكود.",
+            "\nFor digital products: please confirm account region, compatibility and code delivery.",
           )
         : ""),
   );
@@ -303,7 +276,7 @@ export function StoreProvider({
       </a>
       <div className="topline">
         {t("من البريمي، لكل عُمان", "From Al Buraimi, across Oman")}
-        <span>{t("أسعار موثقة · وتأكيد قبل الدفع", "Verified references · Confirm before payment")}</span>
+        <span>{t("تجزئة 10% · جملة 17%", "Retail 10% · Trade 17%")}</span>
       </div>
       <header className="header">
         <div className="container header-inner">
@@ -499,7 +472,7 @@ export function StoreProvider({
                         </div>
                         <small>
                           {t("المجموع:", "Subtotal:")}{" "}
-                          {price(lineTotal(original, x.quantity, mode), lang)}
+                          {price(amount(p, mode) * x.quantity, lang)}
                         </small>
                       </div>
                       <button
@@ -563,30 +536,8 @@ export function StoreProvider({
     </Context.Provider>
   );
 }
-export function PriceSelector({ product }: { product?: Product } = {}) {
+export function PriceSelector() {
   const { t, mode, setMode } = useShop();
-  if (product && isMarketplaceReference(product))
-    return (
-      <div className="pricing-selector marketplace-reference">
-        <p>
-          {t(
-            "سعر مرجعي محوّل من عرض خارجي موثّق وقت المراجعة؛ لا تطبق عليه خصومات التجزئة أو الجملة تلقائيًا، ويؤكد السعر النهائي قبل الدفع.",
-            "Converted reference price from an external listing verified at review time. Retail/trade discounts are not applied automatically; final price is confirmed before payment.",
-          )}
-        </p>
-      </div>
-    );
-  if (product && !hasVerifiedReference(product))
-    return (
-      <div className="pricing-selector marketplace-reference">
-        <p>
-          {t(
-            "السعر المرجعي الحالي يحتاج إعادة تحقق قبل عرضه. تواصل معنا لتأكيد التوفر والسعر النهائي.",
-            "The current reference price needs re-verification before display. Contact us to confirm availability and the final price.",
-          )}
-        </p>
-      </div>
-    );
   return (
     <div className="pricing-selector">
       <div
@@ -612,18 +563,17 @@ export function PriceSelector({ product }: { product?: Product } = {}) {
       <p>
         {mode === "wholesale"
           ? t(
-              "خصم الجملة 17% يطبق فقط على مرجع عُماني حالي ومؤهل؛ يؤكد الفريق التوفر والسعر قبل الدفع.",
-              "The 17% trade price applies only to a current qualified Omani reference; our team confirms availability and final price before payment.",
+              "أسعار الجملة لطلبات التجار والمحلات. الخصم من السعر المرجعي ولا يجمع مع خصم التجزئة.",
+              "Wholesale prices apply to trade and shop orders. Discounts are based on the reference price and are not combined.",
             )
           : t(
-              "خصم التجزئة 10% يطبق فقط على مرجع عُماني حالي ومؤهل؛ يؤكد الفريق التوفر والسعر قبل الدفع.",
-              "The 10% retail price applies only to a current qualified Omani reference; our team confirms availability and final price before payment.",
+              "سعر التجزئة بعد خصم 10% من السعر المرجعي.",
+              "Retail price includes 10% off the reference price.",
             )}
       </p>
     </div>
   );
 }
-
 export function ProductCard({
   product: original,
   onNavigate,
@@ -642,13 +592,9 @@ export function ProductCard({
       >
         <Photo src={p.images[0]} alt={p.name} />
         <span className="badge">
-          {isMarketplaceReference(original)
-            ? t("حساب Fortnite", "Fortnite account")
-            : hasVerifiedReference(original)
-              ? mode === "wholesale"
-                ? t("جملة −17%", "Trade −17%")
-                : t("−10%", "−10%")
-              : t("تأكيد السعر", "Confirm price")}
+          {mode === "wholesale"
+            ? t("جملة −17%", "Trade −17%")
+            : t("−10%", "−10%")}
         </span>
       </Link>
       <div className="product-info">
@@ -658,24 +604,11 @@ export function ProductCard({
         </Link>
         <div className="price">
           <strong>{price(amount(p, mode), lang)}</strong>
-          {isMarketplaceReference(original) ? (
-            <span className="price-reference">
-              {t(
-                "مرجع خارجي — يؤكد قبل الدفع",
-                "External reference — confirm before payment",
-              )}
-            </span>
-          ) : hasVerifiedReference(original) ? (
-            <del
-              title={t("السعر المرجعي لدى المصدر", "Retailer reference price")}
-            >
-              {price(p.source.price, lang)}
-            </del>
-          ) : (
-            <span className="price-reference">
-              {t("مرجع قديم — إعادة تحقق مطلوبة", "Legacy reference — recheck required")}
-            </span>
-          )}
+          <del
+            title={t("السعر المرجعي لدى المصدر", "Retailer reference price")}
+          >
+            {price(p.source.price, lang)}
+          </del>
         </div>
         <div className="card-actions">
           <Link href={`/products/${p.slug}`} onClick={onNavigate}>
@@ -710,7 +643,7 @@ export function Catalog({
     [category, setCategory] = useState(initialCategory);
   const filtered = products.filter(
     (p) =>
-      (!offers || hasVerifiedReference(p)) &&
+      (!offers || p.oldPrice) &&
       (category === "الكل" || p.category === category) &&
       normalize(
         `${p.name} ${p.en.name} ${p.brand} ${p.category} ${categoriesEn[p.category]} ${p.slug}`,
@@ -802,22 +735,22 @@ export function Catalog({
   );
 }
 export function Categories() {
-  const { lang } = useShop();
-  const iconFor = (category: string) => {
-    if (category === "الهواتف") return Smartphone;
-    if (category === "الساعات الذكية") return Watch;
-    if (category === "الصوتيات") return Headphones;
-    if (category === "الشواحن والطاقة") return BatteryCharging;
-    if (category === "الإكسسوارات" || category === "ملحقات الكمبيوتر") return Cable;
-    if (category === "ألعاب الفيديو") return Gamepad2;
-    if (category === "بطاقات الهدايا") return Gift;
-    if (category === "الألعاب أونلاين" || category === "الشبكات") return Globe;
-    return Package;
-  };
+  const { lang } = useShop(),
+    icons = [
+      Smartphone,
+      Watch,
+      Headphones,
+      BatteryCharging,
+      Cable,
+      Gamepad2,
+      Gift,
+      Globe,
+      Package,
+    ];
   return (
     <div className="categories">
-      {categories.map((c) => {
-        const Icon = iconFor(c);
+      {categories.map((c, i) => {
+        const Icon = icons[i];
         return (
           <Link
             href={
@@ -836,7 +769,6 @@ export function Categories() {
     </div>
   );
 }
-
 export function ProductActions({ product: p }: { product: Product }) {
   const { add, setPanel, lang, t, mode } = useShop(),
     [added, setAdded] = useState(false);
@@ -895,7 +827,7 @@ export function Gallery({ product: original }: { product: Product }) {
               aria-pressed={selected === i}
               onClick={() => setSelected(i)}
             >
-              <Photo src={image} alt="" sizes="60px" />
+              <Image src={image} width={60} height={60} alt="" />
             </button>
           ))}
         </div>
@@ -940,7 +872,7 @@ export function Wholesale() {
       </div>
       <div>
         <h3>
-          {t("طلبات الجملة والتجار — سعر مؤهل عند التحقق", "Trade & shop orders — qualified pricing when verified")}
+          {t("طلبات الجملة والتجار — خصم 17%", "Trade & shop orders — 17% off")}
         </h3>
         <p>
           {t(
@@ -1072,8 +1004,8 @@ function Assistant({ close }: { close: () => void }) {
       "What are you looking for? Choose a category and set your budget in Omani rials.",
     ),
     wholesale: t(
-      "خصم الجملة 17% يطبق فقط عند وجود مرجع عُماني حالي ومؤهل. الفريق يؤكد التوفر والسعر والتوريد.",
-      "The 17% trade price applies only when a current qualified Omani reference is available. Our team confirms availability, price and supply.",
+      "خصم الجملة 17% للتجار والمحلات. الفريق يؤكد التوفر والتوريد.",
+      "Trade orders receive 17% off the reference price. Our team confirms availability and supply.",
     ),
   };
   const recommendNow = (raw: string) => {
@@ -1120,7 +1052,7 @@ function Assistant({ close }: { close: () => void }) {
   const recommend = (raw: string) => startTransition(() => recommendNow(raw));
   const matches = products
     .filter((p) => matchesAssistant(p, type, budget, exclusive, model, mode))
-    .sort((a, b) => (amount(a, mode) ?? Number.POSITIVE_INFINITY) - (amount(b, mode) ?? Number.POSITIVE_INFINITY));
+    .sort((a, b) => amount(a, mode) - amount(b, mode));
   const reset = () => {
     setInput("");
     setLastMessage("");
