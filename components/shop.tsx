@@ -902,7 +902,7 @@ export function Gallery({ product: original }: { product: Product }) {
               aria-pressed={selected === i}
               onClick={() => setSelected(i)}
             >
-              <Image src={image} width={60} height={60} alt="" />
+              <Photo src={image} alt="" sizes="60px" />
             </button>
           ))}
         </div>
