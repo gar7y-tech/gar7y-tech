@@ -1,6 +1,42 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T03:30:25.650Z",
+  "generatedAt": "2026-10-03T13:26:56.832Z",
   "mode": "evidence-grounded-advisory",
-  "recommendations": []
+  "recommendations": [
+    {
+      "systemId": "api",
+      "severity": "elevated",
+      "evidence": [
+        "availability=100%",
+        "objective=99.9%",
+        "burn_rate=0",
+        "p95=1253ms"
+      ],
+      "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
+      "runbook": "public-edge-unreachable"
+    },
+    {
+      "systemId": "identity",
+      "severity": "elevated",
+      "evidence": [
+        "availability=100%",
+        "objective=99.9%",
+        "burn_rate=0",
+        "p95=1407ms"
+      ],
+      "recommendation": "Inspect latest deployment, dependency health and private runtime errors. Do not mutate production from the public plane.",
+      "runbook": "public-edge-unreachable"
+    },
+    {
+      "systemId": "public-change",
+      "severity": "high",
+      "evidence": [
+        "change_risk=53/100",
+        "sensitive_paths=12",
+        "migrations=0"
+      ],
+      "recommendation": "Require targeted review, successful critical-path tests and a verified rollback path before promotion.",
+      "runbook": "high-change-risk"
+    }
+  ]
 }
