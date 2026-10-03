@@ -98,14 +98,7 @@ export function Photo({
 }) {
   const [failed, setFailed] = useState(false);
   const { t } = useShop();
-  const legacyOrigin =
-    "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app";
-  const localFortnite = src.startsWith("/products/fortnite-account-");
-  const resolved = failed
-    ? "/icon.svg"
-    : src.startsWith("/") && !localFortnite
-      ? `${legacyOrigin}${src}`
-      : src;
+  const resolved = failed ? "/icon.svg" : src;
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
