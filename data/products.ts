@@ -93,7 +93,7 @@ export const products: Product[] = [
     "oldPrice": 557.013,
     "wholesalePrice": 462.321,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-256gb-silver.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRXlFVTNWQ2NHZnVQZ1ZHVERRSkREclQ5NVJ4OStiQklybHZqYkJwOUI0UWdxbzNTY3U5ODZDSkhYT1hNS1JHaWNmOVR5UGFsc2xtOXNhVml5ZmhaTkg"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -148,7 +148,7 @@ export const products: Product[] = [
     "oldPrice": 650.121,
     "wholesalePrice": 539.6,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-512gb-black.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCWEQvUEQ2K0RlZDNJelh6T1hiakdBdytYcDJJakhmeWdzWGE3eWZweldlbU01ZlZDa0xRSGNsZGN2cGtrRCtsV0tMSEdWSm02WG9JS0VxaEpJQnZwSFF4aU04bVBaVGpXenUzcE1tZ0JTTWk"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -203,7 +203,7 @@ export const products: Product[] = [
     "oldPrice": 835.509,
     "wholesalePrice": 693.472,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-1tb-silver.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRXlFVTNWQ2NHZnVQZ1ZHVERRSkREclQ5NVJ4OStiQklybHZqYkJwOUI0UWdxbzNTY3U5ODZDSkhYT1hNS1JHaWNmOVR5UGFsc2xtOXNhVml5ZmhaTkg"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -258,7 +258,7 @@ export const products: Product[] = [
     "oldPrice": 1114.441,
     "wholesalePrice": 924.986,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-2tb-silver.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRXlFVTNWQ2NHZnVQZ1ZHVERRSkREclQ5NVJ4OStiQklybHZqYkJwOUI0UWdxbzNTY3U5ODZDSkhYT1hNS1JHaWNmOVR5UGFsc2xtOXNhVml5ZmhaTkg"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -313,7 +313,7 @@ export const products: Product[] = [
     "oldPrice": 600.83,
     "wholesalePrice": 498.689,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-max-256gb-black.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNmxIMGwrWFVjeE1VUlRMRWVWaXVleHNjcXQ1U2FBY2RzWU80SEN4Z1NYZXA4TndFSGFWdWZMa21CRXlrUm45elpxZTk0czYvTGlFaFJ6MUo4NytKelc"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -368,7 +368,7 @@ export const products: Product[] = [
     "oldPrice": 693.524,
     "wholesalePrice": 575.625,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-max-512gb-black.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-black-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNmxIMGwrWFVjeE1VUlRMRWVWaXVleHNjcXQ1U2FBY2RzWU80SEN4Z1NYZXA4TndFSGFWdWZMa21CRXlrUm45elpxZTk0czYvTGlFaFJ6MUo4NytKelc"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -423,7 +423,7 @@ export const products: Product[] = [
     "oldPrice": 879.326,
     "wholesalePrice": 729.841,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-max-1tb-silver.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNWtvNWRUSnBraGdtbVpoaEhCcStEZ1JIMnJUYkhxeFlQUFF6U1JnK1dZZmROL1VCcUxMZGhIeWpHS1Y3Y0ZmQnB1TDcrSFk1dTh4UW5LRWFTUk84MUg"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -478,7 +478,7 @@ export const products: Product[] = [
     "oldPrice": 1157.833,
     "wholesalePrice": 961.001,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-18-pro-max-2tb-silver.webp"
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-max-finish-select-silver-202609?wid=940&hei=1112&fmt=png-alpha&.v=UmkydCsrWUVqOXF2VEM2dzB6cklhWUQ2cmRnWCtSNmVDd2t4cWxWSnIvNWtvNWRUSnBraGdtbVpoaEhCcStEZ1JIMnJUYkhxeFlQUFF6U1JnK1dZZmROL1VCcUxMZGhIeWpHS1Y3Y0ZmQnB1TDcrSFk1dTh4UW5LRWFTUk84MUg"
     ],
     "shortDescription": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
     "description": "شريحة A20 Pro وكاميرا رئيسية بدقة 48MP بفتحة عدسة متغيرة. إصدار الشرق الأوسط بشريحتي eSIM.",
@@ -532,7 +532,7 @@ export const products: Product[] = [
     "price": 422.1,
     "oldPrice": 469,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/iphone-17-pro-256-silver.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/iphone_17_pro_silver_1"
     ],
     "shortDescription": "أداء A19 Pro وكاميرات ثلاثية لتفاصيل تستحق الاحتفاظ بها.",
     "description": "أداء A19 Pro وكاميرات ثلاثية لتفاصيل تستحق الاحتفاظ بها. الشاشة: 6.3 بوصة · المعالج: A19 Pro · التخزين: 256GB.",
@@ -587,7 +587,7 @@ export const products: Product[] = [
     "price": 55.35,
     "oldPrice": 61.5,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/galaxy-a16-4g-grey.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400908931_1"
     ],
     "shortDescription": "شاشة واسعة وبطارية كبيرة، لاستخدامك اليومي بسهولة.",
     "description": "شاشة واسعة وبطارية كبيرة، لاستخدامك اليومي بسهولة. الشاشة: 6.7 بوصة Super AMOLED · التخزين: 128GB · الذاكرة: 6GB.",
@@ -642,7 +642,7 @@ export const products: Product[] = [
     "price": 63,
     "oldPrice": 70,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/galaxy-a16-5g-black.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400905569_1"
     ],
     "shortDescription": "اتصال 5G وشاشة AMOLED لتبقى قريبًا من كل ما يهمك.",
     "description": "اتصال 5G وشاشة AMOLED لتبقى قريبًا من كل ما يهمك. الشاشة: 6.7 بوصة Super AMOLED · التخزين: 128GB · الذاكرة: 4GB.",
@@ -697,7 +697,7 @@ export const products: Product[] = [
     "price": 40.41,
     "oldPrice": 44.9,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/watch-fit-3-black.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400884981_1"
     ],
     "shortDescription": "ساعة خفيفة بشاشة واضحة وتتبّع للتمارين اليومية.",
     "description": "ساعة خفيفة بشاشة واضحة وتتبّع للتمارين اليومية. الشاشة: 1.82 بوصة AMOLED · الدقة: 480 × 408 · الاتصال: Bluetooth 5.2.",
@@ -752,7 +752,7 @@ export const products: Product[] = [
     "price": 54.81,
     "oldPrice": 60.9,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/watch-fit-3-grey.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400884985_1"
     ],
     "shortDescription": "تصميم رفيع وتاج دوّار للوصول السريع إلى وظائف الساعة.",
     "description": "تصميم رفيع وتاج دوّار للوصول السريع إلى وظائف الساعة. الشاشة: AMOLED · الدقة: 480 × 408 · الاتصال: Bluetooth 5.2.",
@@ -807,7 +807,7 @@ export const products: Product[] = [
     "price": 48.825,
     "oldPrice": 54.25,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/airpods-4.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400900642_1"
     ],
     "shortDescription": "صوت مكاني ومكالمات أوضح في تصميم مريح وخفيف.",
     "description": "صوت مكاني ومكالمات أوضح في تصميم مريح وخفيف. الشريحة: H2 · الصوت: صوت مكاني مخصص · المكالمات: Voice Isolation.",
@@ -862,7 +862,7 @@ export const products: Product[] = [
     "price": 25.421,
     "oldPrice": 28.245,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/jbl-wave-buds-2-white.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S500917893_1"
     ],
     "shortDescription": "اختر ما تسمعه مع إلغاء الضوضاء والصوت القوي من JBL.",
     "description": "اختر ما تسمعه مع إلغاء الضوضاء والصوت القوي من JBL. إلغاء الضوضاء: ANC مع Smart Ambient · الاتصال: Bluetooth 5.3 · المشغّلات: 8mm.",
@@ -917,7 +917,7 @@ export const products: Product[] = [
     "price": 16.916,
     "oldPrice": 18.795,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/jbl-go-4-black.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S400887603_2"
     ],
     "shortDescription": "صوت محمول بحجم صغير، للبيت ولخارج البيت.",
     "description": "صوت محمول بحجم صغير، للبيت ولخارج البيت. الاتصال: Bluetooth · مقاومة الماء والغبار: IP67 · التشغيل: حتى 7 ساعات بحسب الاستخدام.",
@@ -972,7 +972,7 @@ export const products: Product[] = [
     "price": 17.91,
     "oldPrice": 19.9,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/anker-nano-power-10k.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S600962139_1"
     ],
     "shortDescription": "طاقة معك في كل مكان وكابل مدمج يجعل الشحن أسهل.",
     "description": "طاقة معك في كل مكان وكابل مدمج يجعل الشحن أسهل. السعة: 10000mAh · الخرج: حتى 45W عبر USB-C · الدخل: حتى 30W.",
@@ -1027,7 +1027,7 @@ export const products: Product[] = [
     "price": 8.01,
     "oldPrice": 8.9,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/anker-nano-45w.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S500941144_1"
     ],
     "shortDescription": "شاحن صغير بقدرة 45W لأجهزة USB-C المتوافقة.",
     "description": "شاحن صغير بقدرة 45W لأجهزة USB-C المتوافقة. القدرة: 45W · المنفذ: USB-C · تقنية الشحن: Power Delivery / GaN.",
@@ -1082,7 +1082,7 @@ export const products: Product[] = [
     "price": 4.41,
     "oldPrice": 4.9,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/anker-zolo-18m.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S600965987_1"
     ],
     "shortDescription": "كابل مضفّر للشحن ونقل البيانات، بطول مريح.",
     "description": "كابل مضفّر للشحن ونقل البيانات، بطول مريح. الطول: 1.8 متر · المنافذ: USB-C إلى USB-C · القدرة: حتى 240W مع الأجهزة المتوافقة.",
@@ -1137,7 +1137,7 @@ export const products: Product[] = [
     "price": 10.8,
     "oldPrice": 12,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/smartix-iphone-air-black.webp"
+      "https://pimcdn.sharafdg.com/cdn-cgi/image/width%3D900%2Cheight%3D900%2Cfit%3Dpad%2Cformat%3Dwebp%2Cquality%3D85/images/S500947313_1"
     ],
     "shortDescription": "ملمس ناعم وحواف مرتفعة لحماية الكاميرا اليومية.",
     "description": "ملمس ناعم وحواف مرتفعة لحماية الكاميرا اليومية. التوافق: iPhone Air فقط · الخامة: سيليكون · الشحن المغناطيسي: متوافق مع MagSafe.",
@@ -1193,7 +1193,7 @@ export const products: Product[] = [
     "oldPrice": 265.9,
     "wholesalePrice": 220.697,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/ps5-slim-disc.webp"
+      "https://www.eros.ae/media/catalog/product/cache/0a7dd086897ebf7d858113abe1d65194/s/o/sony_ps5slim_2_.jpg"
     ],
     "shortDescription": "جهاز PS5 بتصميم Slim وقارئ أقراص. الحامل العمودي يُباع منفصلًا.",
     "description": "جهاز PS5 بتصميم Slim وقارئ أقراص. الحامل العمودي يُباع منفصلًا.",
@@ -1244,7 +1244,7 @@ export const products: Product[] = [
     "oldPrice": 255,
     "wholesalePrice": 211.65,
     "images": [
-      "https://mrrobot-oman-store-gduiwv7e0-cyber-0opsom.vercel.app/products/switch-2-mario-kart.webp"
+      "https://www.eros.ae/media/catalog/product/cache/0a7dd086897ebf7d858113abe1d65194/b/9/b95150fbb366b55d91be_1.jpg"
     ],
     "shortDescription": "جهاز نينتندو الهجين مع لعبة Mario Kart World. شاشة 1080p ودعم HDR10.",
     "description": "جهاز نينتندو الهجين مع لعبة Mario Kart World. شاشة 1080p ودعم HDR10.",
